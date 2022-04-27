@@ -12,8 +12,8 @@ class Splash extends StatefulWidget {
 }
 
 class _SplashState extends State<Splash> {
-  // @override
- /* void initState() {
+  @override
+  void initState() {
     super.initState();
     _navigateToHome();
   }
@@ -21,14 +21,13 @@ class _SplashState extends State<Splash> {
   _navigateToHome() async {
     await Future.delayed(
         const Duration(
-          milliseconds: 2000,
+          milliseconds: 6000,
         ),
         () {});
     Navigator.pushReplacement(
         context, MaterialPageRoute(builder: (context) => MainScreen()));
-  }*/
+  }
 
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: white,
@@ -42,7 +41,7 @@ class _SplashState extends State<Splash> {
                 children: [
                   Stack(
                     children: [
-                      SemiContainer().leftContainer(),
+                      SemiContainer().leftContainer(400.0,60.0,70.0),
                       Center(
                           child: Image.asset(
                         "assets/images/splash.png",
@@ -58,7 +57,7 @@ class _SplashState extends State<Splash> {
               ),
               Stack(
                 children: [
-                  SemiContainer().rightContainer(),
+                  SemiContainer().rightContainer(270.0,50.0,50.0),
                   RotationTransition(
                     turns: const AlwaysStoppedAnimation(10 / 360),
                     child: Center(
