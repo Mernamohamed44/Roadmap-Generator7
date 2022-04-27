@@ -1,10 +1,46 @@
 import 'package:flutter/material.dart';
+import 'package:roadmap_generator/colors.dart';
+import 'package:roadmap_generator/widgets/buttons.dart';
+
+
+import '../widgets/semicontainer.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      backgroundColor: white,
+      body: SafeArea(
+        child: ListView(
+          children:[ Column(
+            children: [
+              Stack(
+                children: [
+                  SemiContainer().leftContainer(460.0,160.0,160.0),
+                  Center(
+                      child: Image.asset(
+                        "assets/images/main.png",
+                        width: 350,
+                        height: 350,
+                      )),
+                  SemiContainer().rightContainer(350.0,50.0,50.0),
+                ],
+              ),
+            ],
+          ),
+            const SizedBox(height: 50,),
+            const buttons(text: 'Sign In'),
+            const SizedBox(height: 20,),
+            const buttons(text: 'Sign up'),
+            const SizedBox(height: 20,),
+            const Padding(
+              padding: EdgeInsets.only(left: 30,right: 30),
+              child:  buttons(text: 'Exit'),
+            )
+        ]),
+      ),
+    );
   }
 }

@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import '../colors.dart';
 
 class SemiContainer {
-   Widget leftContainer(){
+   Widget leftContainer(h,w,m){
     return Column(
        children: <Widget>[
          Align(
@@ -13,11 +13,11 @@ class SemiContainer {
            child: Arc(
              arcType: ArcType.CONVEX,
              edge: Edge.RIGHT,
-             height: 70.0,
+             height: m,
              clipShadows: [ClipShadow(color: Colors.black)],
              child:  Container(
-               height: 400,
-               width: 60,
+               height: h,
+               width: w,
                color: mint,
              ),
            ),
@@ -26,7 +26,7 @@ class SemiContainer {
      );
    }
 
-   Widget rightContainer(){
+   Widget rightContainer(h,w,m){
      return Column(
        children: <Widget>[
          Align(
@@ -34,11 +34,11 @@ class SemiContainer {
            child: Arc(
              arcType: ArcType.CONVEX,
              edge: Edge.LEFT,
-             height: 50.0,
+             height: m,
              clipShadows: [ClipShadow(color: Colors.black)],
              child:  Container(
-               height: 280,
-               width: 50,
+               height: h,
+               width: w,
                color: mint,
              ),
            ),
