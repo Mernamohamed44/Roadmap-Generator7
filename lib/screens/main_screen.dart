@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:roadmap_generator/colors.dart';
+import 'package:roadmap_generator/screens/sign_in.dart';
+import 'package:roadmap_generator/screens/sign_up.dart';
 import 'package:roadmap_generator/widgets/buttons.dart';
-
-
 import '../widgets/semicontainer.dart';
 
 class MainScreen extends StatelessWidget {
@@ -31,13 +31,23 @@ class MainScreen extends StatelessWidget {
             ],
           ),
             const SizedBox(height: 50,),
-            const buttons(text: 'Sign In'),
+            buttons(text: 'Sign In',fun: (){
+              Navigator.pushReplacement(context,MaterialPageRoute(builder: (_){
+                return const SignIn();
+              }));
+            },),
             const SizedBox(height: 20,),
-            const buttons(text: 'Sign up'),
+             buttons(text: 'Sign up',fun: (){
+           Navigator.push(context,MaterialPageRoute(builder: (_){
+              return const SignUp();
+              }));
+              },),
             const SizedBox(height: 20,),
-            const Padding(
-              padding: EdgeInsets.only(left: 30,right: 30),
-              child:  buttons(text: 'Exit'),
+             Padding(
+              padding: const EdgeInsets.only(left: 30,right: 30),
+              child:  buttons(text: 'Exit',fun: (){
+              Navigator.pop(context);
+                 },),
             )
         ]),
       ),

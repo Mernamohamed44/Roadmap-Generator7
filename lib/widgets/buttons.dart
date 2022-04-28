@@ -1,12 +1,14 @@
 
 import 'package:flutter/material.dart';
+import 'package:roadmap_generator/widgets/text_feild.dart';
 
 import '../colors.dart';
 
 class buttons extends StatelessWidget{
   final String  text;
+  final VoidCallback fun;
 
-  const buttons({Key? key, required this.text}) : super(key: key);
+  const buttons({Key? key, required this.text,required this.fun}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -29,7 +31,7 @@ class buttons extends StatelessWidget{
               style: BorderStyle.solid
           ), borderRadius: BorderRadius.circular(50)),
           ),
-          onPressed: () {},
+          onPressed: fun,
           child: Text(
             text,
             style: TextStyle(color: mint, fontSize: 20),
