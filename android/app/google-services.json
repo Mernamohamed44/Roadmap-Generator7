@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "88774059243",
+    "project_id": "roadmap-d7245",
+    "storage_bucket": "roadmap-d7245.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88774059243:android:d437746abd16b300060aae",
+        "android_client_info": {
+          "package_name": "com.example.roadmap_generator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88774059243-udi04l7uu8uegshgoh1napgp73qkmuc2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOSa_K1BI8b6M5WLf4M9qQ2DL9wuev5Zw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "88774059243-udi04l7uu8uegshgoh1napgp73qkmuc2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,7 +1,9 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:roadmap_generator/colors.dart';
 import 'package:roadmap_generator/screens/sign_in.dart';
 
+import '../Rest/Authentication.dart';
 import '../widgets/mint_button.dart';
 import '../widgets/text_feild.dart';
 
@@ -10,6 +12,8 @@ class SignUp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    TextEditingController emailController = TextEditingController();
+    TextEditingController passwordController = TextEditingController();
     return Scaffold(
       backgroundColor: white,
       body: SingleChildScrollView(
@@ -48,7 +52,8 @@ class SignUp extends StatelessWidget {
                 const SizedBox(
                   height: 5,
                 ),
-                const ScreenTextField(''),
+                const SizedBox(height: 50),
+                const ScreenTextField(),
                 const SizedBox(
                   height: 15,
                 ),
@@ -61,7 +66,20 @@ class SignUp extends StatelessWidget {
                 const SizedBox(
                   height: 5,
                 ),
-                const ScreenTextField(''),
+                SizedBox(
+                  height: 50,
+                  child: TextField(
+                    controller: emailController,
+                    decoration: InputDecoration(
+                      fillColor: Colors.white,
+                      filled: true,
+                      enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20)),
+                      focusedBorder: const OutlineInputBorder(
+                          borderSide: BorderSide(width: 1)),
+                    ),
+                  ),
+                ),
                 const SizedBox(
                   height: 15,
                 ),
@@ -74,7 +92,20 @@ class SignUp extends StatelessWidget {
                 const SizedBox(
                   height: 5,
                 ),
-                const ScreenTextField(''),
+                SizedBox(
+                  height: 50,
+                  child: TextField(
+                    controller: passwordController,
+                    decoration: InputDecoration(
+                      fillColor: Colors.white,
+                      filled: true,
+                      enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20)),
+                      focusedBorder: const OutlineInputBorder(
+                          borderSide: BorderSide(width: 1)),
+                    ),
+                  ),
+                ),
                 const SizedBox(
                   height: 15,
                 ),
@@ -87,7 +118,23 @@ class SignUp extends StatelessWidget {
                 const SizedBox(
                   height: 5,
                 ),
-                const ScreenTextField('')
+                SizedBox(
+                  height: 50,
+                  child: TextField(
+                    controller: passwordController,
+                    decoration: InputDecoration(
+                      fillColor: Colors.white,
+                      filled: true,
+                      enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20)),
+                      focusedBorder: const OutlineInputBorder(
+                          borderSide: BorderSide(width: 1)),
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 15,
+                ),
               ],
             ),
           ),
@@ -100,9 +147,15 @@ class SignUp extends StatelessWidget {
               MintButtons(
                 text: 'Sign up',
                 fun: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (_) {
-                    return const SignIn();
-                  }));
+                  if (kDebugMode) {
+                    print(emailController);
+                  }
+                  Auth()
+                      .signUp(emailController.text, passwordController.text)
+                      .then((value) => Navigator.push(context,
+                              MaterialPageRoute(builder: (_) {
+                            return const SignIn();
+                          })));
                 },
               ),
               const SizedBox(
