@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:roadmap_generator/colors.dart';
 
 
 class ScreenTextField extends StatefulWidget {
@@ -18,9 +19,9 @@ class _ScreenTextFieldState extends State<ScreenTextField> {
         decoration: InputDecoration(
           fillColor: Colors.white,
           filled: true,
-          enabledBorder:  OutlineInputBorder(borderRadius:BorderRadius.circular(20) ),
+          enabledBorder:  OutlineInputBorder(borderRadius:BorderRadius.circular(10) ),
           focusedBorder:
-          const OutlineInputBorder(borderSide: BorderSide(width: 1)),
+           OutlineInputBorder(borderSide: BorderSide(width: 1,color: grey,),),
         ),
       ),
     );

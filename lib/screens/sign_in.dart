@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:roadmap_generator/colors.dart';
-import 'package:roadmap_generator/widgets/text_feild.dart';
 import '../Rest/Authentication.dart';
 import '../widgets/mint_button.dart';
 import 'choose_track.dart';
@@ -18,24 +17,26 @@ class SignIn extends StatelessWidget {
         child: Column(
           children: [
             const SizedBox(
-              height: 100,
+              height: 60,
             ),
             Center(
-                child: Text(
-              'Sign In',
-              style: TextStyle(
-                  color: mint, fontSize: 40, fontWeight: FontWeight.bold),
-            )),
+              child: Text(
+                'Sign In',
+                style: TextStyle(
+                  color: mint,
+                  fontSize: 26,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
             Divider(
               color: mint,
-              height: 30,
-              thickness: 2,
-              endIndent: 120,
-              indent: 120,
-            ),
-            const SizedBox(
               height: 20,
+              thickness: 2,
+              endIndent: 130,
+              indent: 130,
             ),
+            const SizedBox(height: 50),
             Padding(
               padding: const EdgeInsets.all(14.0),
               child: Column(
@@ -48,7 +49,7 @@ class SignIn extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       )),
                   const SizedBox(
-                    height: 5,
+                    height: 6,
                   ),
                   SizedBox(
                     height: 50,
@@ -58,9 +59,13 @@ class SignIn extends StatelessWidget {
                         fillColor: Colors.white,
                         filled: true,
                         enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(20)),
-                        focusedBorder: const OutlineInputBorder(
-                            borderSide: BorderSide(width: 1)),
+                            borderRadius: BorderRadius.circular(10)),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                            width: 1,
+                            color: grey,
+                          ),
+                        ),
                       ),
                     ),
                   ),
@@ -74,7 +79,7 @@ class SignIn extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       )),
                   const SizedBox(
-                    height: 5,
+                    height: 6,
                   ),
                   SizedBox(
                     height: 50,
@@ -84,9 +89,13 @@ class SignIn extends StatelessWidget {
                         fillColor: Colors.white,
                         filled: true,
                         enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(20)),
-                        focusedBorder: const OutlineInputBorder(
-                            borderSide: BorderSide(width: 1)),
+                            borderRadius: BorderRadius.circular(10)),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                            width: 1,
+                            color: grey,
+                          ),
+                        ),
                       ),
                     ),
                   )
@@ -94,7 +103,7 @@ class SignIn extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 40,
+              height: 80,
             ),
             MintButtons(
               text: 'Sign In',
@@ -108,7 +117,7 @@ class SignIn extends StatelessWidget {
               },
             ),
             const SizedBox(
-              width: 5,
+              height: 20,
             ),
             MintButtons(
               text: 'Exit',
