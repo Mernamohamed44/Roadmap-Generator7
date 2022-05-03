@@ -148,6 +148,13 @@ class SignUp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               MintButtons(
+                text: 'Exit',
+                fun: () {
+                  Navigator.pop(context);
+                },
+              ),
+              const SizedBox(width: 20),
+              MintButtons(
                 text: 'Sign up',
                 fun: () {
                   if (kDebugMode) {
@@ -155,19 +162,16 @@ class SignUp extends StatelessWidget {
                   }
                   Auth()
                       .signUp(emailController.text, passwordController.text)
-                      .then((value) => Navigator.push(context,
-                              MaterialPageRoute(builder: (_) {
+                      .then(
+                        (value) => Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (_) {
                             return const SignIn();
-                          })));
+                          }),
+                        ),
+                      );
                 },
               ),
-              const SizedBox(width: 20),
-              MintButtons(
-                text: 'Exit',
-                fun: () {
-                  Navigator.pop(context);
-                },
-              )
             ],
           )
         ],

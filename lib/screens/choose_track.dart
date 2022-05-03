@@ -18,32 +18,35 @@ class _ChooseTrackState extends State<ChooseTrack> {
     return Scaffold(
       backgroundColor: white,
       body: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const SizedBox(
-              height: 60,
-            ),
-            Text(
-              'Choose a Track',
-              style: TextStyle(
-                  color: mint, fontSize: 25, fontWeight: FontWeight.bold),
-            ),
-            Divider(
-              color: mint,
-              height: 30,
-              thickness: 2,
-              endIndent: 220,
-              indent: 5,
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            const RadioButton(),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                MintButtons(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const SizedBox(
+                height: 40
+              ),
+              Text(
+                'Choose a Track',
+                style: TextStyle(
+                    color: mint, fontSize: 28, fontWeight: FontWeight.bold),
+              ),
+              Divider(
+                color: mint,
+                height: 30,
+                thickness: 2,
+                endIndent: 150,
+                indent: 0,
+              ),
+              const SizedBox(height: 10),
+              const RadioButton(),
+              Container(
+                margin: const EdgeInsets.symmetric(
+                  horizontal: 10,
+                  vertical: 40,
+                ),
+                alignment: Alignment.bottomRight,
+                child: MintButtons(
                   text: 'Next',
                   fun: () {
                     Navigator.push(context, MaterialPageRoute(builder: (_) {
@@ -51,9 +54,9 @@ class _ChooseTrackState extends State<ChooseTrack> {
                     }));
                   },
                 ),
-              ],
-            )
-          ],
+              )
+            ],
+          ),
         ),
       ),
     );
