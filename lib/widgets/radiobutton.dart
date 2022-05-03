@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:roadmap_generator/screens/quiz_1.dart';
 import '../colors.dart';
 
 class RadioButton extends StatefulWidget {
@@ -22,7 +23,6 @@ enum SingingCharacter {
   graphic
 }
 
-
 class _RadioButtonState extends State<RadioButton> {
   SingingCharacter? _character = SingingCharacter.flutter;
 
@@ -40,6 +40,7 @@ class _RadioButtonState extends State<RadioButton> {
             onChanged: (SingingCharacter? value) {
               setState(() {
                 _character = value;
+                Quiz.index = 0;
               });
             },
           ),
@@ -54,6 +55,7 @@ class _RadioButtonState extends State<RadioButton> {
             onChanged: (SingingCharacter? value) {
               setState(() {
                 _character = value;
+                Quiz.index = 1;
               });
             },
           ),
@@ -67,6 +69,7 @@ class _RadioButtonState extends State<RadioButton> {
             onChanged: (SingingCharacter? value) {
               setState(() {
                 _character = value;
+                Quiz.index = 2;
               });
             },
           ),
@@ -80,6 +83,7 @@ class _RadioButtonState extends State<RadioButton> {
             onChanged: (SingingCharacter? value) {
               setState(() {
                 _character = value;
+                Quiz.index = 3;
               });
             },
           ),
@@ -94,6 +98,7 @@ class _RadioButtonState extends State<RadioButton> {
             onChanged: (SingingCharacter? value) {
               setState(() {
                 _character = value;
+                Quiz.index = 4;
               });
             },
           ),
@@ -107,6 +112,7 @@ class _RadioButtonState extends State<RadioButton> {
             onChanged: (SingingCharacter? value) {
               setState(() {
                 _character = value;
+                Quiz.index = 5;
               });
             },
           ),
@@ -121,6 +127,7 @@ class _RadioButtonState extends State<RadioButton> {
             onChanged: (SingingCharacter? value) {
               setState(() {
                 _character = value;
+                Quiz.index = 6;
               });
             },
           ),
@@ -134,6 +141,7 @@ class _RadioButtonState extends State<RadioButton> {
             onChanged: (SingingCharacter? value) {
               setState(() {
                 _character = value;
+                Quiz.index = 7;
               });
             },
           ),
@@ -147,6 +155,7 @@ class _RadioButtonState extends State<RadioButton> {
             onChanged: (SingingCharacter? value) {
               setState(() {
                 _character = value;
+                Quiz.index = 8;
               });
             },
           ),
@@ -161,6 +170,7 @@ class _RadioButtonState extends State<RadioButton> {
             onChanged: (SingingCharacter? value) {
               setState(() {
                 _character = value;
+                Quiz.index = 9;
               });
             },
           ),
@@ -174,6 +184,7 @@ class _RadioButtonState extends State<RadioButton> {
             onChanged: (SingingCharacter? value) {
               setState(() {
                 _character = value;
+                Quiz.index = 10;
               });
             },
           ),

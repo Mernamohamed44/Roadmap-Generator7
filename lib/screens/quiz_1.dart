@@ -5,47 +5,81 @@ import 'package:roadmap_generator/widgets/mint_button.dart';
 class Quiz extends StatelessWidget {
   const Quiz({Key? key}) : super(key: key);
 
+  static int index = 0;
+
+  String get track {
+    switch (index) {
+      case 0:
+        return "Front-end Development";
+      case 1:
+        return "Back-end Development";
+      case 2:
+        return "Data Science";
+      case 3:
+        return "Cyber Security";
+      case 4:
+        return "Android Development";
+      case 5:
+        return "UI/UX Design";
+      case 6:
+        return "Full Stack Development";
+      case 7:
+        return "Cloud Computing";
+      case 8:
+        return "IOS Development";
+      case 9:
+        return "Flutter Development";
+      case 10:
+        return "Graphic Design";
+      default:
+        return "Flutter Development";
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: white,
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const SizedBox(
-                height: 100,
+                height: 60,
               ),
               Text(
-                'Flutter quiz',
+                track + ' Quiz',
                 style: TextStyle(
-                    color: mint, fontSize: 40, fontWeight: FontWeight.bold),
+                  color: mint,
+                  fontSize: 36,
+                ),
               ),
               Divider(
                 color: mint,
                 height: 30,
-                thickness: 2,
-                endIndent: 220,
+                thickness: 1,
+                endIndent: 200,
                 indent: 5,
               ),
-              const Text('Why this quiz is important in 1-2 lines ..',
-                  style: TextStyle(fontSize: 20)),
-              const SizedBox(
-                height: 5,
-              ),
-              const Text('notes to be considered:',
-                  style: TextStyle(fontSize: 20)),
-              const SizedBox(
-                height: 5,
-              ),
-              const Text('1-think will before answer',
-                  style: TextStyle(fontSize: 20)),
-              const Text('2-you can back to a certain Q by click back button',
-                  style: TextStyle(fontSize: 20)),
               const SizedBox(
                 height: 20,
+              ),
+              const Text(
+                  'This quiz helps us provide you with the '
+                  'most suitable roadmap for your current level in the chosen track. \n \n'
+                  'Notes to be considered: ',
+                  style: TextStyle(fontSize: 24)),
+              const SizedBox(
+                height: 8,
+              ),
+              const Text(
+                  '- Take your time to think before answering the question. \n'
+                  '- You can always  go back to a certain question by clicking the back button',
+                  style: TextStyle(fontSize: 20)),
+              const SizedBox(
+                height: 60,
               ),
               Center(child: MintButtons(text: 'Take Quiz', fun: () {}))
             ],
