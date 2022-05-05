@@ -13,6 +13,22 @@ class SignIn extends StatelessWidget {
   Widget build(BuildContext context) {
     TextEditingController emailController = TextEditingController();
     TextEditingController passwordController = TextEditingController();
+    void showDialogError(String message) {
+      showDialog(
+          context: context,
+          builder: (ctx) => AlertDialog(
+                title: const Text('An Error Occurred'),
+                content: Text(message),
+                actions: [
+                  TextButton(
+                      onPressed: () {
+                        Navigator.of(ctx).pop();
+                      },
+                      child: const Text('OK'))
+                ],
+              ));
+    }
+
     return Scaffold(
       backgroundColor: white,
       appBar: AppBar(
@@ -75,6 +91,7 @@ class SignIn extends StatelessWidget {
                 SizedBox(
                   height: 50,
                   child: TextField(
+                    obscureText: true,
                     controller: passwordController,
                     decoration: InputDecoration(
                       fillColor: Colors.white,
@@ -98,12 +115,25 @@ class SignIn extends StatelessWidget {
           ),
           MintButtons(
             text: 'Sign In',
-            fun: () {
-              Auth().signIn(emailController.text, passwordController.text).then(
-                  (value) =>
-                      Navigator.push(context, MaterialPageRoute(builder: (_) {
-                        return const ChooseTrack();
-                      })));
+            fun: () async {
+              try {
+                await Auth()
+                    .signIn(emailController.text, passwordController.text)
+                    .then((value) =>
+                        Navigator.push(context, MaterialPageRoute(builder: (_) {
+                          return const ChooseTrack();
+                        })));
+              } catch (error) {
+                var errorMessage = 'Authentication failed';
+                if (error.toString().contains('EMAIL_NOT_FOUND')) {
+                  errorMessage = 'This email address is not found ';
+                } else if (error.toString().contains('INVALID_EMAIL')) {
+                  errorMessage = 'Please enter correct email ';
+                } else if (error.toString().contains('INVALID_PASSWORD')) {
+                  errorMessage = 'Wrong password ';
+                }
+                showDialogError(errorMessage);
+              }
             },
           ),
           const SizedBox(

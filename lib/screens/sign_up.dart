@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:roadmap_generator/colors.dart';
 import 'package:roadmap_generator/screens/sign_in.dart';
@@ -16,6 +15,22 @@ class SignUp extends StatelessWidget {
   Widget build(BuildContext context) {
     TextEditingController emailController = TextEditingController();
     TextEditingController passwordController = TextEditingController();
+    void showDialogError(String message) {
+      showDialog(
+          context: context,
+          builder: (ctx) => AlertDialog(
+                title: const Text('An Error Occurred'),
+                content: Text(message),
+                actions: [
+                  TextButton(
+                      onPressed: () {
+                        Navigator.of(ctx).pop();
+                      },
+                      child: const Text('OK'))
+                ],
+              ));
+    }
+
     return Scaffold(
       backgroundColor: white,
       appBar: AppBar(
@@ -89,6 +104,7 @@ class SignUp extends StatelessWidget {
                 SizedBox(
                   height: 50,
                   child: TextField(
+                    obscureText: true,
                     controller: passwordController,
                     decoration: InputDecoration(
                       fillColor: Colors.white,
@@ -117,6 +133,7 @@ class SignUp extends StatelessWidget {
                 SizedBox(
                   height: 50,
                   child: TextField(
+                    obscureText: true,
                     controller: passwordController,
                     decoration: InputDecoration(
                       fillColor: Colors.white,
@@ -152,20 +169,33 @@ class SignUp extends StatelessWidget {
               const SizedBox(width: 20),
               MintButtons(
                 text: 'Sign up',
-                fun: () {
-                  if (kDebugMode) {
-                    print(emailController);
+                fun: () async {
+                  try {
+                    await Auth()
+                        .signUp(emailController.text, passwordController.text)
+                        .then(
+                          (value) => Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (_) {
+                              return const SignIn();
+                            }),
+                          ),
+                        );
+                  } catch (error) {
+                    var errorMessage = 'Authentication failed';
+                    if (error.toString().contains('EMAIl_EXISTS')) {
+                      errorMessage = 'This email address is already use';
+                    } else if (error.toString().contains('INVALID_EMAIL')) {
+                      errorMessage = 'This is not email address ';
+                    } else if (error.toString().contains('WEAK_PASSWORD')) {
+                      errorMessage = 'This password is too weak ';
+                    } else if (error.toString().contains('EMAIL_NOT_FOUND')) {
+                      errorMessage = 'Can not find user with this email ';
+                    } else if (error.toString().contains('INVALID_PASSWORD')) {
+                      errorMessage = 'Invalid password ';
+                    }
+                    showDialogError(errorMessage);
                   }
-                  Auth()
-                      .signUp(emailController.text, passwordController.text)
-                      .then(
-                        (value) => Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (_) {
-                            return const SignIn();
-                          }),
-                        ),
-                      );
                 },
               ),
             ],
