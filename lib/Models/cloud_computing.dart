@@ -13,33 +13,28 @@ class CloudComputingQuestion {
 
 const List cloudComputingQuestions = [
   {
-    "id": 1,
     "question": "cloud 1",
     "options": ['Apple', 'Google', 'Facebook', 'Microsoft'],
-    "answer_index": 1,
+    "roadmap": ['link1', 'link2', 'link3']
   },
   {
-    "id": 2,
     "question": "cloud 2",
     "options": ['Jun 2017', 'Jun 2017', 'May 2017', 'May 2018'],
-    "answer_index": 2,
+    "roadmap": ['link1', 'link2', 'link3']
   },
   {
-    "id": 3,
     "question": "cloud 3",
     "options": ['Double', 'Int', 'Char', 'Word'],
-    "answer_index": 2,
+    "roadmap": ['link1', 'link2', 'link3']
   },
   {
-    "id": 4,
     "question": "cloud 4",
     "options": ['Cin', 'Count>>', 'Cout', 'Output>>'],
-    "answer_index": 2,
+    "roadmap": ['link1', 'link2', 'link3']
   },
   {
-    "id": 5,
     "question": "cloud 5",
     "options": ['Cin', 'Count>>', 'Cout', 'Output>>'],
-    "answer_index": 1,
+    "roadmap": ['link1', 'link2', 'link3']
   },
 ];

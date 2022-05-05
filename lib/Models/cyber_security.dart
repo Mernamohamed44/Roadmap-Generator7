@@ -13,33 +13,28 @@ class CyberSecurityQuestion {
 
 const List cyberSecurityQuestions = [
   {
-    "id": 1,
     "question": "security 1",
     "options": ['Apple', 'Google', 'Facebook', 'Microsoft'],
-    "answer_index": 1,
+    "roadmap": ['link1', 'link2', 'link3']
   },
   {
-    "id": 2,
     "question": "security 2",
     "options": ['Jun 2017', 'Jun 2017', 'May 2017', 'May 2018'],
-    "answer_index": 2,
+    "roadmap": ['link1', 'link2', 'link3']
   },
   {
-    "id": 3,
     "question": "security 3",
     "options": ['Double', 'Int', 'Char', 'Word'],
-    "answer_index": 2,
+    "roadmap": ['link1', 'link2', 'link3']
   },
   {
-    "id": 4,
     "question": "security 4",
     "options": ['Cin', 'Count>>', 'Cout', 'Output>>'],
-    "answer_index": 2,
+    "roadmap": ['link1', 'link2', 'link3']
   },
   {
-    "id": 5,
     "question": "security 5",
     "options": ['Cin', 'Count>>', 'Cout', 'Output>>'],
-    "answer_index": 1,
+    "roadmap": ['link1', 'link2', 'link3']
   },
 ];
