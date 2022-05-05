@@ -61,6 +61,7 @@ class Quiz extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 28,
                   color: mint,
+                  fontWeight: FontWeight.bold,
                 )),
             const SizedBox(
               height: 12,
@@ -77,6 +78,7 @@ class Quiz extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 28,
                   color: mint,
+                  fontWeight: FontWeight.bold,
                 )),
             const SizedBox(
               height: 12,

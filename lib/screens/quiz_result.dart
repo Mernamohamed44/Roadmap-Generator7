@@ -60,7 +60,10 @@ class Result extends StatelessWidget {
               child: ResultButton(
                   text: "Re-take The Quiz",
                   fun: () {
-                    Navigator.pop(context);
+                    Navigator.pushReplacement(context,
+                        MaterialPageRoute(builder: (_) {
+                      return const Quiz();
+                    }));
                   }),
             ),
             const SizedBox(height: 10),
