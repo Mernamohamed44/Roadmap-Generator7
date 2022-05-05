@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:roadmap_generator/colors.dart';
+import 'package:roadmap_generator/screens/quiz_2.dart';
 import 'package:roadmap_generator/widgets/mint_button.dart';
 
 class Quiz extends StatelessWidget {
@@ -7,7 +8,7 @@ class Quiz extends StatelessWidget {
 
   static int index = 0;
 
-  String get track {
+  static String get track {
     switch (index) {
       case 0:
         return "Front-end Development";
@@ -66,22 +67,38 @@ class Quiz extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              const Text(
+              Text(
                   'This quiz helps us provide you with the '
-                  'most suitable roadmap for your current level in the chosen track. \n \n'
+                  'most suitable roadmap for you by determining'
+                      ' your current level in the chosen track. \n \n'
                   'Notes to be considered: ',
-                  style: TextStyle(fontSize: 24)),
+                  style: TextStyle(
+                    fontSize: 24,
+                    color: darkGrey,
+                  )),
               const SizedBox(
                 height: 8,
               ),
-              const Text(
+              Text(
                   '- Take your time to think before answering the question. \n'
-                  '- You can always  go back to a certain question by clicking the back button',
-                  style: TextStyle(fontSize: 20)),
+                  '- You can always  go back to a certain question by clicking the back button.',
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: darkGrey,
+                  )),
               const SizedBox(
                 height: 60,
               ),
-              Center(child: MintButtons(text: 'Take Quiz', fun: () {}))
+              Center(
+                child: MintButtons(
+                  text: 'Take Quiz',
+                  fun: () {
+                    Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) {
+                      return const Questions();
+                    }));
+                  },
+                ),
+              )
             ],
           ),
         ),

@@ -15,8 +15,8 @@ class MintButtons extends StatelessWidget{
       child: TextButton(
         style: TextButton.styleFrom(
           backgroundColor:  mint,
-          shape: RoundedRectangleBorder(side: const BorderSide(
-              color: Colors.grey,
+          shape: RoundedRectangleBorder(side:  BorderSide(
+              color: darkGrey,
               width: 1,
               style: BorderStyle.solid
           ), borderRadius: BorderRadius.circular(18)),

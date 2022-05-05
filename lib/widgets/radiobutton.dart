@@ -24,7 +24,7 @@ enum SingingCharacter {
 }
 
 class _RadioButtonState extends State<RadioButton> {
-  SingingCharacter? _character = SingingCharacter.flutter;
+  SingingCharacter? _character;
 
   @override
   Widget build(BuildContext context) {
