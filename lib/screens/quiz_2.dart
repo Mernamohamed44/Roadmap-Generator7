@@ -23,7 +23,7 @@ class _QuestionsState extends State<Questions> {
         Quiz.track + ' Quiz',
         style: TextStyle(
           color: white,
-          fontSize: 26,
+          fontSize: 24,
         ),
       ),
         backgroundColor: mint,
@@ -46,10 +46,10 @@ class _QuestionsState extends State<Questions> {
               color: mint,
               height: 30,
               thickness: 1,
-              endIndent: 200,
+              endIndent: 120,
               indent: 5,
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 40),
             Text(
               "This is a dumb question",
               style: TextStyle(

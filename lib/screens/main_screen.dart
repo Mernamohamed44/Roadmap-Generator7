@@ -3,6 +3,8 @@ import 'package:roadmap_generator/colors.dart';
 import 'package:roadmap_generator/screens/sign_in.dart';
 import 'package:roadmap_generator/screens/sign_up.dart';
 import 'package:roadmap_generator/widgets/buttons.dart';
+import 'dart:io';
+import 'package:flutter/services.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -67,7 +69,11 @@ class MainScreen extends StatelessWidget {
                     child: Buttons(
                       text: 'Exit',
                       fun: () {
-                        Navigator.pop(context);
+                        if (Platform.isAndroid) {
+                          SystemNavigator.pop();
+                        } else if (Platform.isIOS) {
+                          exit(0);
+                        }
                       },
                     ),
                   )

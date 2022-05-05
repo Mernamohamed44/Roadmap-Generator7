@@ -17,12 +17,12 @@ class Buttons extends StatelessWidget {
             Radius.circular(19),
           ),
         ),
-        child: TextButton(
+        child: ElevatedButton(
+
           style: TextButton.styleFrom(
+            elevation: 4,
             backgroundColor: Colors.white,
             shape: RoundedRectangleBorder(
-                side:  BorderSide(
-                    color: darkGrey, width: 1, style: BorderStyle.solid),
                 borderRadius: BorderRadius.circular(20)),
           ),
           onPressed: fun,

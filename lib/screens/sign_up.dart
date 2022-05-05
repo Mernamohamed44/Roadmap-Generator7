@@ -6,6 +6,8 @@ import 'package:roadmap_generator/screens/sign_in.dart';
 import '../Rest/Authentication.dart';
 import '../widgets/mint_button.dart';
 import '../widgets/text_feild.dart';
+import 'dart:io';
+import 'package:flutter/services.dart';
 
 class SignUp extends StatelessWidget {
   const SignUp({Key? key}) : super(key: key);
@@ -16,29 +18,18 @@ class SignUp extends StatelessWidget {
     TextEditingController passwordController = TextEditingController();
     return Scaffold(
       backgroundColor: white,
+      appBar: AppBar(title: Text(
+        'Sign Up',
+        style: TextStyle(
+          color: white,
+          fontSize: 24,
+        ),
+      ),
+        backgroundColor: mint,
+      ),
       body: SingleChildScrollView(
           child: Column(
         children: [
-          const SizedBox(
-            height: 60,
-          ),
-          Center(
-            child: Text(
-              'Sign Up',
-              style: TextStyle(
-                color: mint,
-                fontSize: 26,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-          Divider(
-            color: mint,
-            height: 20,
-            thickness: 2,
-            endIndent: 130,
-            indent: 130,
-          ),
           const SizedBox(height: 50),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -49,7 +40,7 @@ class SignUp extends StatelessWidget {
                 Text(
                   'Enter your name',
                   style: TextStyle(
-                    color: mint,
+                    color: grey,
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
                   ),
@@ -60,7 +51,7 @@ class SignUp extends StatelessWidget {
                 Text(
                   'Enter your email address',
                   style: TextStyle(
-                    color: mint,
+                    color: grey,
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
                   ),
@@ -88,7 +79,7 @@ class SignUp extends StatelessWidget {
                 Text(
                   'Create a Password',
                   style: TextStyle(
-                    color: mint,
+                    color: grey,
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
                   ),
@@ -116,7 +107,7 @@ class SignUp extends StatelessWidget {
                 Text(
                   'Confirm a Password',
                   style: TextStyle(
-                    color: mint,
+                    color: grey,
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
                   ),
@@ -150,7 +141,11 @@ class SignUp extends StatelessWidget {
               MintButtons(
                 text: 'Exit',
                 fun: () {
-                  Navigator.pop(context);
+                  if (Platform.isAndroid) {
+                    SystemNavigator.pop();
+                  } else if (Platform.isIOS) {
+                    exit(0);
+                  }
                 },
               ),
               const SizedBox(width: 20),

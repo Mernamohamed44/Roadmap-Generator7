@@ -15,29 +15,24 @@ class Result extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: white,
+      appBar: AppBar(title: Text(
+        'Result',
+        style: TextStyle(
+          color: white,
+          fontSize: 24,
+        ),
+      ),
+        backgroundColor: mint,
+      ),
       body: Padding(
         padding: const EdgeInsets.all(20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SizedBox(height: 50),
+
+            const SizedBox(height: 70),
             Text(
-              "Result",
-              style: TextStyle(
-                color: mint,
-                fontSize: 36,
-              ),
-            ),
-            Divider(
-              color: mint,
-              height: 30,
-              thickness: 1,
-              endIndent: 240,
-              indent: 0,
-            ),
-            const SizedBox(height: 20),
-            Text(
-              "According to the quiz you are" +
+              "According to the quiz you are " +
                   level +
                   " in the " +
                   Quiz.track +

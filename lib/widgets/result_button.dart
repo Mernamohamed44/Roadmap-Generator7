@@ -13,13 +13,12 @@ class ResultButton extends StatelessWidget {
     return SizedBox(
       height: 50,
       width: 270,
-      child: TextButton(
+      child: ElevatedButton(
         style: TextButton.styleFrom(
           backgroundColor: mint,
-          shape: RoundedRectangleBorder(
-              side: BorderSide(
-                  color: darkGrey, width: 1, style: BorderStyle.solid),
-              borderRadius: BorderRadius.circular(12)),
+          elevation: 4,
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         ),
         onPressed: fun,
         child: Text(

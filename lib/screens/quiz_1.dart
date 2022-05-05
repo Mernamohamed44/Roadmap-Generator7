@@ -41,66 +41,76 @@ class Quiz extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: white,
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const SizedBox(
-                height: 60,
-              ),
-              Text(
-                track + ' Quiz',
-                style: TextStyle(
-                  color: mint,
-                  fontSize: 36,
-                ),
-              ),
-              Divider(
-                color: mint,
-                height: 30,
-                thickness: 1,
-                endIndent: 200,
-                indent: 5,
-              ),
-              const SizedBox(
-                height: 20,
-              ),
-              Text(
-                  'This quiz helps us provide you with the '
-                  'most suitable roadmap for you by determining'
-                      ' your current level in the chosen track. \n \n'
-                  'Notes to be considered: ',
-                  style: TextStyle(
-                    fontSize: 24,
-                    color: darkGrey,
-                  )),
-              const SizedBox(
-                height: 8,
-              ),
-              Text(
-                  '- Take your time to think before answering the question. \n'
-                  '- You can always  go back to a certain question by clicking the back button.',
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: darkGrey,
-                  )),
-              const SizedBox(
-                height: 60,
-              ),
-              Center(
-                child: MintButtons(
-                  text: 'Take Quiz',
-                  fun: () {
-                    Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) {
-                      return const Questions();
-                    }));
-                  },
-                ),
-              )
-            ],
+      appBar: AppBar(
+        title: Text(
+          track + ' Quiz',
+          style: TextStyle(
+            color: white,
+            fontSize: 24,
           ),
+        ),
+        backgroundColor: mint,
+      ),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const SizedBox(height: 70),
+            Text(
+                'Why this quiz?',
+                style: TextStyle(
+                  fontSize: 28,
+                  color: mint,
+                )),
+            const SizedBox(
+              height: 12,
+            ),
+            Text(
+                'This quiz helps us provide you with the '
+                'most suitable roadmap for you by determining'
+                ' your current level in the chosen track. \n \n',
+                style: TextStyle(
+                  fontSize: 20,
+                  color: darkGrey,
+                )), Text(
+                'Notes to be considered: ',
+                style: TextStyle(
+                  fontSize: 28,
+                  color: mint,
+                )),
+            const SizedBox(
+              height: 12,
+            ),
+            Text('- Take your time to think before answering the question. \n'
+                '- You can always  go back to a certain question by clicking the back button.',
+
+                style: TextStyle(
+
+                  fontSize: 20,
+                  color: darkGrey,
+                )),
+            // Text(
+            //     '- You can always  go back to a certain question by clicking the back button.',
+            //     style: TextStyle(
+            //       fontSize: 20,
+            //       color: darkGrey,
+            //     )),
+            const SizedBox(
+              height: 60,
+            ),
+            Center(
+              child: MintButtons(
+                text: 'Go to Quiz',
+                fun: () {
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (_) {
+                    return const Questions();
+                  }));
+                },
+              ),
+            )
+          ],
         ),
       ),
     );

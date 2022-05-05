@@ -27,20 +27,21 @@ class _RoadmapScreenState extends State<RoadmapScreen> {
           padding: const EdgeInsets.all(20),
           child: Column(
             children: [
-              const SizedBox(height: 60),
+              const SizedBox(height: 40),
               Text(
                 "Your roadmap to " + Quiz.track,
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  color: mint,
+                  color: grey,
                   fontSize: 36,
                 ),
               ),
               Divider(
-                color: mint,
+                color: grey,
                 height: 30,
                 thickness: 1,
               ),
+              const SizedBox(height: 20),
               LinkedLabelCheckbox(
                 label: 'Step (' + step.toString() + '): whatever',
                 padding: const EdgeInsets.symmetric(horizontal: 20.0),

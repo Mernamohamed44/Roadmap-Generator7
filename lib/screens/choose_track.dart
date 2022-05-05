@@ -17,28 +17,23 @@ class _ChooseTrackState extends State<ChooseTrack> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: white,
+      appBar: AppBar(title: Text(
+        'Choose A Track',
+        style: TextStyle(
+          color: white,
+          fontSize: 24,
+        ),
+      ),
+        backgroundColor: mint,
+      ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SizedBox(
-                height: 40
-              ),
-              Text(
-                'Choose a Track',
-                style: TextStyle(
-                    color: mint, fontSize: 28, fontWeight: FontWeight.bold),
-              ),
-              Divider(
-                color: mint,
-                height: 30,
-                thickness: 2,
-                endIndent: 150,
-                indent: 0,
-              ),
-              const SizedBox(height: 10),
+
+              const SizedBox(height: 20),
               const RadioButton(),
               Container(
                 margin: const EdgeInsets.symmetric(
