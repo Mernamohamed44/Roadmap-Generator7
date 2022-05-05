@@ -19,13 +19,14 @@ class _QuestionsState extends State<Questions> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: white,
-      appBar: AppBar(title: Text(
-        Quiz.track + ' Quiz',
-        style: TextStyle(
-          color: white,
-          fontSize: 24,
+      appBar: AppBar(
+        title: Text(
+          Quiz.track + ' Quiz',
+          style: TextStyle(
+            color: white,
+            fontSize: 24,
+          ),
         ),
-      ),
         backgroundColor: mint,
       ),
       body: Padding(
@@ -34,7 +35,6 @@ class _QuestionsState extends State<Questions> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-
             Text(
               "Question " + questionNumber.toString() + "/5 :",
               style: TextStyle(
@@ -68,12 +68,13 @@ class _QuestionsState extends State<Questions> {
                       Navigator.pop(context);
                     }),
                 const SizedBox(width: 20),
-                MintButtons(text: "Next", fun: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (_) {
-                    return const Result();
-                  }));
-                }
-                ),  //if next index == null, text = get result
+                MintButtons(
+                    text: "Next",
+                    fun: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (_) {
+                        return const Result();
+                      }));
+                    }), //if next index == null, text = get result
               ],
             )
           ],

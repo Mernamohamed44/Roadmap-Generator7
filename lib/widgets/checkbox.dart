@@ -36,7 +36,8 @@ class LinkedLabelCheckbox extends StatelessWidget {
                 ),
                 recognizer: TapGestureRecognizer()
                   ..onTap = () {
-                    launch("https://api.flutter.dev/flutter/material/CheckboxListTile-class.html");
+                    launch(
+                        "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html");
                   },
               ),
             ),
@@ -52,4 +53,3 @@ class LinkedLabelCheckbox extends StatelessWidget {
     );
   }
 }
-

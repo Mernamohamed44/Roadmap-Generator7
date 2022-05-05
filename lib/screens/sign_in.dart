@@ -15,13 +15,14 @@ class SignIn extends StatelessWidget {
     TextEditingController passwordController = TextEditingController();
     return Scaffold(
       backgroundColor: white,
-      appBar: AppBar(title: Text(
-        'Sign In',
-        style: TextStyle(
-          color: white,
-          fontSize: 24,
+      appBar: AppBar(
+        title: Text(
+          'Sign In',
+          style: TextStyle(
+            color: white,
+            fontSize: 24,
+          ),
         ),
-      ),
         backgroundColor: mint,
       ),
       body: Column(
@@ -98,9 +99,8 @@ class SignIn extends StatelessWidget {
           MintButtons(
             text: 'Sign In',
             fun: () {
-              Auth()
-                  .signIn(emailController.text, passwordController.text)
-                  .then((value) =>
+              Auth().signIn(emailController.text, passwordController.text).then(
+                  (value) =>
                       Navigator.push(context, MaterialPageRoute(builder: (_) {
                         return const ChooseTrack();
                       })));

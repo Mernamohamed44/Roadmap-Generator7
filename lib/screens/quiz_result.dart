@@ -15,13 +15,14 @@ class Result extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: white,
-      appBar: AppBar(title: Text(
-        'Result',
-        style: TextStyle(
-          color: white,
-          fontSize: 24,
+      appBar: AppBar(
+        title: Text(
+          'Result',
+          style: TextStyle(
+            color: white,
+            fontSize: 24,
+          ),
         ),
-      ),
         backgroundColor: mint,
       ),
       body: Padding(
@@ -29,7 +30,6 @@ class Result extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-
             const SizedBox(height: 70),
             Text(
               "According to the quiz you are " +
@@ -47,25 +47,32 @@ class Result extends StatelessWidget {
             ),
             const SizedBox(height: 70),
             Center(
-              child: ResultButton(text: "Get The Roadmap", fun: () {
-                Navigator.push(context, MaterialPageRoute(builder: (_) {
-                  return const RoadmapScreen();
-                }));
-              }),
+              child: ResultButton(
+                  text: "Get The Roadmap",
+                  fun: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (_) {
+                      return const RoadmapScreen();
+                    }));
+                  }),
             ),
             const SizedBox(height: 10),
             Center(
-              child: ResultButton(text: "Re-take The Quiz", fun: () {
-                Navigator.pop(context);
-              }),
+              child: ResultButton(
+                  text: "Re-take The Quiz",
+                  fun: () {
+                    Navigator.pop(context);
+                  }),
             ),
             const SizedBox(height: 10),
             Center(
-              child: ResultButton(text: "Choose Another Track", fun: () {
-                Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) {
-                  return const ChooseTrack();
-                }));
-              }),
+              child: ResultButton(
+                  text: "Choose Another Track",
+                  fun: () {
+                    Navigator.pushReplacement(context,
+                        MaterialPageRoute(builder: (_) {
+                      return const ChooseTrack();
+                    }));
+                  }),
             ),
           ],
         ),

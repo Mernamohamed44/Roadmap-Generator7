@@ -57,8 +57,7 @@ class Quiz extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(height: 70),
-            Text(
-                'Why this quiz?',
+            Text('Why this quiz?',
                 style: TextStyle(
                   fontSize: 28,
                   color: mint,
@@ -73,8 +72,8 @@ class Quiz extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 20,
                   color: darkGrey,
-                )), Text(
-                'Notes to be considered: ',
+                )),
+            Text('Notes to be considered: ',
                 style: TextStyle(
                   fontSize: 28,
                   color: mint,
@@ -82,11 +81,10 @@ class Quiz extends StatelessWidget {
             const SizedBox(
               height: 12,
             ),
-            Text('- Take your time to think before answering the question. \n'
+            Text(
+                '- Take your time to think before answering the question. \n'
                 '- You can always  go back to a certain question by clicking the back button.',
-
                 style: TextStyle(
-
                   fontSize: 20,
                   color: darkGrey,
                 )),

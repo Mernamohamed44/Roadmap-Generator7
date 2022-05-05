@@ -18,13 +18,14 @@ class SignUp extends StatelessWidget {
     TextEditingController passwordController = TextEditingController();
     return Scaffold(
       backgroundColor: white,
-      appBar: AppBar(title: Text(
-        'Sign Up',
-        style: TextStyle(
-          color: white,
-          fontSize: 24,
+      appBar: AppBar(
+        title: Text(
+          'Sign Up',
+          style: TextStyle(
+            color: white,
+            fontSize: 24,
+          ),
         ),
-      ),
         backgroundColor: mint,
       ),
       body: SingleChildScrollView(
