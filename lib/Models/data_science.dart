@@ -13,8 +13,12 @@ class DataScienceQuestion {
 
 const List dataScienceQuestions = [
   {
-    "question": "data 1",
-    "options": ['Apple', 'Google', 'Facebook', 'Microsoft'],
+    "question": "data 1",'answers': [
+    {'text': 'Facebook', 'score': -2},
+    {'text': 'Adobe', 'score': -2},
+    {'text': 'Google', 'score': 10},
+    {'text': 'Microsoft', 'score': -2},
+  ],
     "roadmap": ['link1', 'link2', 'link3']
   },
   {

@@ -26,6 +26,7 @@ class _RoadmapScreenState extends State<RoadmapScreen> {
         child: Padding(
           padding: const EdgeInsets.all(20),
           child: Column(
+            mainAxisSize: MainAxisSize.min,
             children: [
               const SizedBox(height: 40),
               Text(
