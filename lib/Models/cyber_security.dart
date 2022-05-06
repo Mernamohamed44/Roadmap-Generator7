@@ -14,27 +14,52 @@ class CyberSecurityQuestion {
 const List cyberSecurityQuestions = [
   {
     "question": "security 1",
-    "options": ['Apple', 'Google', 'Facebook', 'Microsoft'],
+    'answers': [
+      {'text': 'xFacebook', 'score': -2},
+      {'text': 'Adobe', 'score': -2},
+      {'text': 'Google', 'score': 10},
+      {'text': 'Microsoft', 'score': -2},
+    ],
     "roadmap": ['link1', 'link2', 'link3']
   },
   {
     "question": "security 2",
-    "options": ['Jun 2017', 'Jun 2017', 'May 2017', 'May 2018'],
+    'answers': [
+      {'text': 'xxFacebook', 'score': -2},
+      {'text': 'Adobe', 'score': -2},
+      {'text': 'Google', 'score': 10},
+      {'text': 'Microsoft', 'score': -2},
+    ],
     "roadmap": ['link1', 'link2', 'link3']
   },
   {
     "question": "security 3",
-    "options": ['Double', 'Int', 'Char', 'Word'],
+    'answers': [
+      {'text': 'xxxFacebook', 'score': -2},
+      {'text': 'Adobe', 'score': -2},
+      {'text': 'Google', 'score': 10},
+      {'text': 'Microsoft', 'score': -2},
+    ],
     "roadmap": ['link1', 'link2', 'link3']
   },
   {
     "question": "security 4",
-    "options": ['Cin', 'Count>>', 'Cout', 'Output>>'],
+    'answers': [
+      {'text': 'xxxxFacebook', 'score': -2},
+      {'text': 'Adobe', 'score': -2},
+      {'text': 'Google', 'score': 10},
+      {'text': 'Microsoft', 'score': -2},
+    ],
     "roadmap": ['link1', 'link2', 'link3']
   },
   {
     "question": "security 5",
-    "options": ['Cin', 'Count>>', 'Cout', 'Output>>'],
+    'answers': [
+      {'text': 'xxxxxFacebook', 'score': -2},
+      {'text': 'Adobe', 'score': -2},
+      {'text': 'Google', 'score': 10},
+      {'text': 'Microsoft', 'score': -2},
+    ],
     "roadmap": ['link1', 'link2', 'link3']
   },
 ];

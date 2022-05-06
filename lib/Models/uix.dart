@@ -14,27 +14,52 @@ class UIXQuestion {
 const List uIXQuestions = [
   {
     "question": "UIX 1",
-    "options": ['Apple', 'Google', 'Facebook', 'Microsoft'],
+    'answers': [
+      {'text': 'Facebook', 'score': -2},
+      {'text': 'Adobe', 'score': -2},
+      {'text': 'Google', 'score': 10},
+      {'text': 'Microsoft', 'score': -2},
+    ],
     "roadmap": ['link1', 'link2', 'link3']
   },
   {
     "question": "UIX 2",
-    "options": ['Jun 2017', 'Jun 2017', 'May 2017', 'May 2018'],
+    'answers': [
+      {'text': 'Facebook', 'score': -2},
+      {'text': 'Adobe', 'score': -2},
+      {'text': 'Google', 'score': 10},
+      {'text': 'Microsoft', 'score': -2},
+    ],
     "roadmap": ['link1', 'link2', 'link3']
   },
   {
     "question": "UIX 3",
-    "options": ['Double', 'Int', 'Char', 'Word'],
+    'answers': [
+      {'text': 'Facebook', 'score': -2},
+      {'text': 'Adobe', 'score': -2},
+      {'text': 'Google', 'score': 10},
+      {'text': 'Microsoft', 'score': -2},
+    ],
     "roadmap": ['link1', 'link2', 'link3']
   },
   {
     "question": "UIX 4",
-    "options": ['Cin', 'Count>>', 'Cout', 'Output>>'],
+    'answers': [
+      {'text': 'Facebook', 'score': -2},
+      {'text': 'Adobe', 'score': -2},
+      {'text': 'Google', 'score': 10},
+      {'text': 'Microsoft', 'score': -2},
+    ],
     "roadmap": ['link1', 'link2', 'link3']
   },
   {
     "question": "UIX 5",
-    "options": ['Cin', 'Count>>', 'Cout', 'Output>>'],
+    'answers': [
+      {'text': 'Facebook', 'score': -2},
+      {'text': 'Adobe', 'score': -2},
+      {'text': 'Google', 'score': 10},
+      {'text': 'Microsoft', 'score': -2},
+    ],
     "roadmap": ['link1', 'link2', 'link3']
   },
 ];

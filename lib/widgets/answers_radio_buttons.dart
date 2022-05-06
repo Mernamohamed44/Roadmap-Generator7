@@ -19,7 +19,8 @@ class _AnswersState extends State<Answers> {
     return Column(
       children: [
         ListTile(
-          title: Text(Quiz.questionList[Quiz.questionNumber]["options"][0],
+          title: Text(
+              Quiz.questionList[Quiz.questionNumber]["answers"][0]['text'],
               style: TextStyle(fontSize: 18, color: grey)),
           leading: Radio<SingingCharacter>(
             fillColor: MaterialStateProperty.all(mint),
@@ -33,7 +34,8 @@ class _AnswersState extends State<Answers> {
           ),
         ),
         ListTile(
-          title: Text(Quiz.questionList[Quiz.questionNumber]["options"][1],
+          title: Text(
+              Quiz.questionList[Quiz.questionNumber]["answers"][1]['text'],
               style: TextStyle(fontSize: 18, color: grey)),
           leading: Radio<SingingCharacter>(
             fillColor: MaterialStateProperty.all(mint),
@@ -47,7 +49,8 @@ class _AnswersState extends State<Answers> {
           ),
         ),
         ListTile(
-          title: Text(Quiz.questionList[Quiz.questionNumber]["options"][2],
+          title: Text(
+              Quiz.questionList[Quiz.questionNumber]["answers"][2]['text'],
               style: TextStyle(fontSize: 18, color: grey)),
           leading: Radio<SingingCharacter>(
             fillColor: MaterialStateProperty.all(mint),
@@ -61,7 +64,8 @@ class _AnswersState extends State<Answers> {
           ),
         ),
         ListTile(
-          title: Text(Quiz.questionList[Quiz.questionNumber]["options"][3],
+          title: Text(
+              Quiz.questionList[Quiz.questionNumber]["answers"][3]['text'],
               style: TextStyle(fontSize: 18, color: grey)),
           leading: Radio<SingingCharacter>(
             fillColor: MaterialStateProperty.all(mint),

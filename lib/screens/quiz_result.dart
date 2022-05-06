@@ -31,18 +31,74 @@ class Result extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(height: 70),
-            Text(
-              "According to the quiz you are " +
-                  level +
-                  " in the " +
-                  Quiz.track +
-                  " track."
-                      "\nWe suggest you to start from step (" +
-                  step.toString() +
-                  ") in the roadmap.",
-              style: TextStyle(
-                color: darkGrey,
-                fontSize: 24,
+            // Text(
+            //   "According to the quiz you are " +
+            //       level +
+            //       " in the " +
+            //       Quiz.track +
+            //       " track."
+            //           "\nWe suggest you to start from step (" +
+            //       step.toString() +
+            //       ") in the roadmap.",
+            //   style: TextStyle(
+            //     color: darkGrey,
+            //     fontSize: 24,
+            //   ),
+            // ),
+            RichText(
+              text: TextSpan(
+                text: "According to the quiz you are ",
+                style: TextStyle(
+                  color: darkGrey,
+                  fontSize: 24,
+                ),
+                children: <TextSpan>[
+                  TextSpan(
+                    text: level,
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: mint,
+                      fontSize: 26,
+                    ),
+                  ),
+                  TextSpan(
+                    text: " in the ",
+                    style: TextStyle(
+                      color: darkGrey,
+                      fontSize: 24,
+                    ),
+                  ),
+                  TextSpan(
+                    text: Quiz.track + " track.",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: mint,
+                      fontSize: 26,
+                    ),
+                  ),
+                  TextSpan(
+                    text: "\nWe suggest you to start from ",
+                    style: TextStyle(
+                      color: darkGrey,
+                      fontSize: 24,
+                    ),
+                  ),
+                  TextSpan(
+                    text: "step (" + step.toString() + ")",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: mint,
+                      fontSize: 26,
+                    ),
+                  ),
+                  TextSpan(
+                    text: " in the roadmap. ",
+                    style: TextStyle(
+                      color: darkGrey,
+                      fontSize: 24,
+                    ),
+                  )
+                ],
               ),
             ),
             const SizedBox(height: 70),
