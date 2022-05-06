@@ -39,7 +39,7 @@ class Result extends StatelessWidget {
                   " track."
                       "\nWe suggest you to start from step (" +
                   step.toString() +
-                  ").",
+                  ") in the roadmap.",
               style: TextStyle(
                 color: darkGrey,
                 fontSize: 24,
@@ -64,6 +64,7 @@ class Result extends StatelessWidget {
                         MaterialPageRoute(builder: (_) {
                       return const Quiz();
                     }));
+                    Quiz.questionNumber = 0;
                   }),
             ),
             const SizedBox(height: 10),
