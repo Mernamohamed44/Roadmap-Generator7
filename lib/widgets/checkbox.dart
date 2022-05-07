@@ -12,44 +12,51 @@ class LinkedLabelCheckbox extends StatelessWidget {
     required this.padding,
     required this.value,
     required this.onChanged,
+    required this.courseLink,
+    required this.step,
   }) : super(key: key);
 
   final String label;
   final EdgeInsets padding;
   final bool value;
   final ValueChanged<bool> onChanged;
+  final String courseLink;
+  final String step;
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: padding,
-      child: Row(
-        children: <Widget>[
-          Expanded(
-            child: RichText(
-              text: TextSpan(
+    return Row(
+      children: <Widget>[
+        Expanded(
+          child: RichText(
+            text: TextSpan(children: [
+              TextSpan(
+                text: 'Step (' + step.toString() + '): \t\t',
+                style: TextStyle(fontSize: 22, color: grey),
+              ),
+              TextSpan(
                 text: label,
                 style: TextStyle(
                   color: mint,
                   decoration: TextDecoration.underline,
-                  fontSize: 24,
+                  fontSize: 18,
                 ),
                 recognizer: TapGestureRecognizer()
                   ..onTap = () {
-                    launch(
-                        "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html");
+                    launch(courseLink);
                   },
-              ),
-            ),
+              )
+            ]),
           ),
-          Checkbox(
-            value: value,
-            onChanged: (bool? newValue) {
-              onChanged(newValue!);
-            },
-          ),
-        ],
-      ),
+        ),
+        Checkbox(
+          value: value,
+          onChanged: (bool? newValue) {
+            onChanged(newValue!);
+          },
+          activeColor: mint,
+        ),
+      ],
     );
   }
 }
