@@ -13,48 +13,48 @@ class AndroidQuestion {
 
 const List androidQuestions = [
   {
-    "question": "Which of the following is not the feature of jQuery?",
+    "question": "In which of the following is toString() method defined?",
     'answers': [
-      {'text': 'Efficient query method for finding the set of document elements', 'score': -2},
-      {'text': 'Expressive syntax for referring to elements in the document', 'score': -2},
-      {'text': ' Useful set of methods for manipulating selected elements', 'score': 10},
-      {'text': ' Powerful functional programming techniques is not used for operating on sets of elements as a group', 'score': -2},
+      {'text': 'java.lang.Object', 'score': -2},
+      {'text': 'Java.lang.String', 'score': -2},
+      {'text': 'java.lang.util', 'score': 10},
+      {'text': 'None of teh above', 'score': -2},
     ],
   },
   {
-    "question": "android 2",
+    "question": "Identify the modifier which cannot be used for constructor.",
     'answers': [
-      {'text': 'Facebook', 'score': -2},
-      {'text': 'Adobe', 'score': -2},
-      {'text': 'Google', 'score': 10},
-      {'text': 'Microsoft', 'score': -2},
+      {'text': 'Public', 'score': -2},
+      {'text': 'Protected', 'score': -2},
+      {'text': 'Private', 'score': 10},
+      {'text': 'Static', 'score': -2},
     ],
   },
   {
-    "question": "android 3",
+    "question": "APK stands for -",
     'answers': [
-      {'text': 'Facebook', 'score': -2},
-      {'text': 'Adobe', 'score': -2},
-      {'text': 'Google', 'score': 10},
-      {'text': 'Microsoft', 'score': -2},
+      {'text': 'Android Phone Kit', 'score': -2},
+      {'text': 'Android Page Kit', 'score': -2},
+      {'text': 'Android Package Kit', 'score': 10},
+      {'text': 'None of the above', 'score': -2},
     ],
   },
   {
-    "question": "android 4",
+    "question": "What does API stand for?",
     'answers': [
-      {'text': 'Facebook', 'score': -2},
-      {'text': 'Adobe', 'score': -2},
-      {'text': 'Google', 'score': 10},
-      {'text': 'Microsoft', 'score': -2},
+      {'text': 'Application Programming Interface', 'score': -2},
+      {'text': 'Android Programming Interface', 'score': -2},
+      {'text': 'Android Page Interface', 'score': 10},
+      {'text': 'Application Page Interface', 'score': -2},
     ],
   },
   {
-    "question": "android 5",
+    "question": "On which of the following, developers can test the application, during developing the android applications?",
     'answers': [
-      {'text': 'Facebook', 'score': -2},
-      {'text': 'Adobe', 'score': -2},
-      {'text': 'Google', 'score': 10},
-      {'text': 'Microsoft', 'score': -2},
+      {'text': 'Third-party emulators', 'score': -2},
+      {'text': 'Emulator included in Android SDK', 'score': -2},
+      {'text': 'Physical android phone', 'score': 10},
+      {'text': 'All of the above', 'score': -2},
     ],
   },
 ];

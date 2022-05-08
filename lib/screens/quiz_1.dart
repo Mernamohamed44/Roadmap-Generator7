@@ -98,7 +98,7 @@ class Quiz extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SizedBox(height: 70),
+            const SizedBox(height: 50),
             Text('Why this quiz?',
                 style: TextStyle(
                   fontSize: 28,
@@ -111,7 +111,22 @@ class Quiz extends StatelessWidget {
             Text(
                 'This quiz helps us provide you with the '
                 'most suitable roadmap for you by determining'
-                ' your current level in the chosen track. \n \n',
+                ' your current level in the chosen track. \n',
+                style: TextStyle(
+                  fontSize: 20,
+                  color: darkGrey,
+                )),Text('Important note!',
+                style: TextStyle(
+                  fontSize: 28,
+                  color: mint,
+                  fontWeight: FontWeight.bold,
+                )),
+            const SizedBox(
+              height: 12,
+            ),
+            Text(
+                'You must have a stable background of computer science concepts.'
+                    ' This includes PL basics, OOP, simple DSA concepts ... etc. \n',
                 style: TextStyle(
                   fontSize: 20,
                   color: darkGrey,

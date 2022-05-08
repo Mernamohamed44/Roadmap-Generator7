@@ -31,7 +31,7 @@ class LinkedLabelCheckbox extends StatelessWidget {
           child: RichText(
             text: TextSpan(children: [
               TextSpan(
-                text: 'Step (' + step.toString() + '): \t\t',
+                text: 'Step (' + step.toString() + '): \t\t\n',
                 style: TextStyle(fontSize: 22, color: grey),
               ),
               TextSpan(

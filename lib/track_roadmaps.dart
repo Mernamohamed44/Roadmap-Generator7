@@ -36,74 +36,66 @@ const Map trackRoadmaps = {
   ],
   "Back-end Development": [
     {
-      "name": "android1",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+      "name": "Learning PHP",
+      "link": "https://www.geeksforgeeks.org/php-tutorials/"
     },
     {
-      "name": "android2",
-      "link": "https://www.google.com/sheets/about/",
+      "name": "Learning some front-end technology",
+      "link":
+          "https://www.geeksforgeeks.org/how-to-become-a-front-end-developer/"
     },
     {
-      "name": "android3",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+      "name": "Learning a back-end framework",
+      "link": "https://www.geeksforgeeks.org/nodejs/"
     },
     {
-      "name": "android4",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+      "name": "Learning a version control system",
+      "link": "https://www.geeksforgeeks.org/introduction-to-github/"
     },
     {
-      "name": "android4",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+      "name": "Learning about databases",
+      "link": "https://www.geeksforgeeks.org/sql-tutorial/"
     },
     {
-      "name": "android4",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+      "name": "Learning API",
+      "link": "https://www.geeksforgeeks.org/introduction-to-apis/"
     },
     {
-      "name": "android4",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+      "name": "Server handling",
+      "link": "https://www.geeksforgeeks.org/introduction-of-server/"
     },
   ],
   "Data Science": [
     {
-      "name": "android1",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+      "name": "Mathematics, statistics & probability",
+      "link": "https://www.geeksforgeeks.org/mathematics-probability/"
     },
     {
-      "name": "android2",
-      "link": "https://www.google.com/sheets/about/",
+      "name": "Data structures & algorithms",
+      "link": "https://www.geeksforgeeks.org/data-structures/"
     },
     {
-      "name": "android3",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+      "name": "Machine Learning",
+      "link": "https://www.geeksforgeeks.org/machine-learning/"
     },
     {
-      "name": "android4",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+      "name": "Deep learning",
+      "link": "https://www.geeksforgeeks.org/introduction-deep-learning/"
     },
     {
-      "name": "android4",
+      "name": "Feature engineering",
       "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+          "https://www.geeksforgeeks.org/feature-engineering-in-r-programming/#:~:text=Feature%20Engineering%20is%20a%20basic,the%20results%20of%20the%20predictions."
     },
     {
-      "name": "android4",
+      "name": "Natural language processing",
       "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+          "https://www.geeksforgeeks.org/introduction-to-natural-language-processing/"
     },
     {
-      "name": "android4",
+      "name": "Data visualization",
       "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+          "https://www.geeksforgeeks.org/what-is-data-visualization-and-why-is-it-important/"
     },
   ],
   "Cyber Security": [
@@ -143,39 +135,33 @@ const Map trackRoadmaps = {
     },
   ],
   "Android Development": [
+    {"name": "Learning Java", "link": "https://www.geeksforgeeks.org/java/"},
     {
-      "name": "android1",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+      "name": "Getting started with Android studio",
+      "link": "https://www.geeksforgeeks.org/android-tutorial/"
     },
     {
-      "name": "android2",
-      "link": "https://www.google.com/sheets/about/",
+      "name": "Android UI design",
+      "link": "https://www.geeksforgeeks.org/layouts-android-ui-design/"
     },
     {
-      "name": "android3",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+      "name": "Learning Firebase",
+      "link": "https://www.geeksforgeeks.org/firebase-introduction/"
     },
     {
-      "name": "android4",
+      "name": "Threading concept",
       "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+          "https://www.geeksforgeeks.org/how-does-threading-work-in-android/"
     },
     {
-      "name": "android4",
+      "name": "Third-party libraries",
       "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+          "https://www.geeksforgeeks.org/best-open-source-android-libraries/"
     },
     {
-      "name": "android4",
+      "name": "Unit testing",
       "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
-    },
-    {
-      "name": "android4",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+          "https://www.geeksforgeeks.org/unit-testing-in-android-using-junit/"
     },
   ],
   "UI/UX Design": [
