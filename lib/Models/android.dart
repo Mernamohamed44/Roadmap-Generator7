@@ -13,14 +13,13 @@ class AndroidQuestion {
 
 const List androidQuestions = [
   {
-    "question": "android 1",
+    "question": "Which of the following is not the feature of jQuery?",
     'answers': [
-      {'text': 'Facebook', 'score': -2},
-      {'text': 'Adobe', 'score': -2},
-      {'text': 'Google', 'score': 10},
-      {'text': 'Microsoft', 'score': -2},
+      {'text': 'Efficient query method for finding the set of document elements', 'score': -2},
+      {'text': 'Expressive syntax for referring to elements in the document', 'score': -2},
+      {'text': ' Useful set of methods for manipulating selected elements', 'score': 10},
+      {'text': ' Powerful functional programming techniques is not used for operating on sets of elements as a group', 'score': -2},
     ],
-    "roadmap": ['link1', 'link2', 'link3']
   },
   {
     "question": "android 2",
@@ -30,7 +29,6 @@ const List androidQuestions = [
       {'text': 'Google', 'score': 10},
       {'text': 'Microsoft', 'score': -2},
     ],
-    "roadmap": ['link1', 'link2', 'link3']
   },
   {
     "question": "android 3",
@@ -40,7 +38,6 @@ const List androidQuestions = [
       {'text': 'Google', 'score': 10},
       {'text': 'Microsoft', 'score': -2},
     ],
-    "roadmap": ['link1', 'link2', 'link3']
   },
   {
     "question": "android 4",
@@ -50,7 +47,6 @@ const List androidQuestions = [
       {'text': 'Google', 'score': 10},
       {'text': 'Microsoft', 'score': -2},
     ],
-    "roadmap": ['link1', 'link2', 'link3']
   },
   {
     "question": "android 5",
@@ -60,6 +56,5 @@ const List androidQuestions = [
       {'text': 'Google', 'score': 10},
       {'text': 'Microsoft', 'score': -2},
     ],
-    "roadmap": ['link1', 'link2', 'link3']
   },
 ];

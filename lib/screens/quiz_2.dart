@@ -72,7 +72,7 @@ class _QuestionsState extends State<Questions> {
               ],
             ),
           ),
-          const SizedBox(height: 90),
+          const SizedBox(height: 50),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -97,7 +97,7 @@ class _QuestionsState extends State<Questions> {
                     if (Quiz.questionNumber == 4) {
                       Navigator.pushReplacement(context,
                           MaterialPageRoute(builder: (_) {
-                        return const Result();
+                        return Result();
                       }));
                     } else {
                       setState(() {

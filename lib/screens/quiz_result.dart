@@ -1,15 +1,32 @@
 import 'package:flutter/material.dart';
 import 'package:roadmap_generator/colors.dart';
+import 'dart:math';
 import 'package:roadmap_generator/screens/choose_track.dart';
 import 'package:roadmap_generator/screens/quiz_1.dart';
 import 'package:roadmap_generator/screens/roadmap.dart';
 import 'package:roadmap_generator/widgets/result_button.dart';
 
+// ignore: must_be_immutable
 class Result extends StatelessWidget {
-  const Result({Key? key}) : super(key: key);
+  Random random = Random();
 
-  static String level = "a beginner";
+  String level = "";
   static int step = 1;
+
+  Result({Key? key}) : super(key: key) {
+    int index = random.nextInt(3);
+
+    if (index == 0) {
+      level = "a Beginner";
+      step = 1;
+    } else if (index == 1) {
+      level = "Intermediate";
+      step = 3;
+    } else {
+      level = "Advanced";
+      step = 6;
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -31,20 +48,6 @@ class Result extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(height: 70),
-            // Text(
-            //   "According to the quiz you are " +
-            //       level +
-            //       " in the " +
-            //       Quiz.track +
-            //       " track."
-            //           "\nWe suggest you to start from step (" +
-            //       step.toString() +
-            //       ") in the roadmap.",
-            //   style: TextStyle(
-            //     color: darkGrey,
-            //     fontSize: 24,
-            //   ),
-            // ),
             RichText(
               text: TextSpan(
                 text: "According to the quiz you are ",
