@@ -51,10 +51,10 @@ const List cloudComputingQuestions = [
   {
     "question": "How many phases are present in Cloud Computing Planning?",
     'answers': [
-      {'text': '2', 'score': -2},
-      {'text': '3', 'score': -2},
+      {'text': '2', 'score': 0},
+      {'text': '3', 'score': 0},
       {'text': '4', 'score': 10},
-      {'text': '5', 'score': -2},
+      {'text': '5', 'score': 0},
     ],
   },
 ];
