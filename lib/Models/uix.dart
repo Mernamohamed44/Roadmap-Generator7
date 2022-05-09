@@ -13,53 +13,48 @@ class UIXQuestion {
 
 const List uIXQuestions = [
   {
-    "question": "UIX 1",
+    "question": "Which of these elements is present in user experience design?",
     'answers': [
-      {'text': 'Facebook', 'score': 0},
-      {'text': 'Adobe', 'score': 0},
-      {'text': 'Google', 'score': 10},
-      {'text': 'Microsoft', 'score': 0},
+      {'text': 'Interaction design', 'score': 0},
+      {'text': 'Visual design', 'score': 0},
+      {'text': 'Information architecture', 'score': 10},
+      {'text': 'Financial planning', 'score': 0},
     ],
-    "roadmap": ['link1', 'link2', 'link3']
   },
   {
-    "question": "UIX 2",
+    "question": "What does the haptic feedback system of interaction design reduce? ",
     'answers': [
-      {'text': 'Facebook', 'score': 0},
-      {'text': 'Adobe', 'score': 0},
-      {'text': 'Google', 'score': 10},
-      {'text': 'Microsoft', 'score': 0},
+      {'text': 'Confusion', 'score': 0},
+      {'text': 'Congestion', 'score': 0},
+      {'text': 'Conviction', 'score': 10},
+      {'text': 'Coincidence', 'score': 0},
     ],
-    "roadmap": ['link1', 'link2', 'link3']
   },
   {
-    "question": "UIX 3",
+    "question": "Which of the following is not a type of user interface?",
     'answers': [
-      {'text': 'Facebook', 'score': 0},
-      {'text': 'Adobe', 'score': 0},
-      {'text': 'Google', 'score': 10},
-      {'text': 'Microsoft', 'score': 0},
+      {'text': 'Command language based', 'score': 0},
+      {'text': 'Menu based', 'score': 0},
+      {'text': 'Efficiency based', 'score': 10},
+      {'text': 'Direct manipulation based', 'score': 0},
     ],
-    "roadmap": ['link1', 'link2', 'link3']
   },
   {
-    "question": "UIX 4",
+    "question": "Which of the following is not GUI components?",
     'answers': [
-      {'text': 'Facebook', 'score': 0},
-      {'text': 'Adobe', 'score': 0},
-      {'text': 'Google', 'score': 10},
-      {'text': 'Microsoft', 'score': -2},
+      {'text': 'Window', 'score': 0},
+      {'text': 'Icon', 'score': 0},
+      {'text': 'Status bar', 'score': 10},
+      {'text': 'Dialog box', 'score': 0},
     ],
-    "roadmap": ['link1', 'link2', 'link3']
   },
   {
-    "question": "UIX 5",
+    "question": "Which of the following is not a button?",
     'answers': [
-      {'text': 'Facebook', 'score': -2},
-      {'text': 'Adobe', 'score': -2},
-      {'text': 'Google', 'score': 10},
-      {'text': 'Microsoft', 'score': -2},
+      {'text': 'Minimize', 'score': 0},
+      {'text': 'Close', 'score': 0},
+      {'text': 'Taskbar', 'score': 10},
+      {'text': 'Maximize', 'score': 0},
     ],
-    "roadmap": ['link1', 'link2', 'link3']
   },
 ];

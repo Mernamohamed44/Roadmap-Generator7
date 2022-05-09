@@ -69,9 +69,9 @@ const List backEndQuestions = [
     "question": "The command to remove rows from a table 'CUSTOMER' is:",
     'answers': [
       {'text': 'REMOVE FROM CUSTOMER ...', 'score': 0},
-      {'text': 'DROP FROM CUSTOMER ...', 'score': -2},
+      {'text': 'DROP FROM CUSTOMER ...', 'score': 0},
       {'text': 'DELETE FROM CUSTOMER WHERE ...', 'score': 10},
-      {'text': 'UPDATE FROM CUSTOMER ...', 'score': -2},
+      {'text': 'UPDATE FROM CUSTOMER ...', 'score': 0},
     ],
   },
 ];

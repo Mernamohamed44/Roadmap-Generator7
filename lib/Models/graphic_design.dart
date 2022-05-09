@@ -13,53 +13,48 @@ class GraphicDesignQuestion {
 
 const List graphicDesignQuestions = [
   {
-    "question": "graphicDesign 1",
+    "question": " ________ is a false visual perception seeing something other than what is really there.",
     'answers': [
-      {'text': 'Facebook', 'score': 0},
-      {'text': 'Adobe', 'score': 0},
-      {'text': 'Google', 'score': 10},
-      {'text': 'Microsoft', 'score': 0},
+      {'text': 'proportion', 'score': 0},
+      {'text': 'illusion', 'score': 0},
+      {'text': 'optical illusion', 'score': 10},
+      {'text': 'Graphic design', 'score': 0},
     ],
-    "roadmap": ['link1', 'link2', 'link3']
   },
   {
-    "question": "graphicDesign 2",
+    "question": "______is a closed 2 dimension area.",
     'answers': [
-      {'text': 'Facebook', 'score': 0},
-      {'text': 'Adobe', 'score': 0},
-      {'text': 'Google', 'score': 10},
-      {'text': 'Microsoft', 'score': 0},
+      {'text': 'value', 'score': 0},
+      {'text': 'shape', 'score': 0},
+      {'text': 'space', 'score': 10},
+      {'text': 'shade', 'score': 0},
     ],
-    "roadmap": ['link1', 'link2', 'link3']
   },
   {
-    "question": "graphicDesign 3",
+    "question": "____ is a color scheme that uses colors that sit side by side on the color wheel and have a common hue.",
     'answers': [
-      {'text': 'Facebook', 'score': 0},
-      {'text': 'Adobe', 'score': -2},
-      {'text': 'Google', 'score': 10},
-      {'text': 'Microsoft', 'score': -2},
+      {'text': 'color scheme', 'score': 0},
+      {'text': 'Triad color scheme', 'score': 0},
+      {'text': 'Analogous color scheme', 'score': 10},
+      {'text': 'Monochromatic color scheme', 'score': 0},
     ],
-    "roadmap": ['link1', 'link2', 'link3']
   },
   {
-    "question": "graphicDesign 4",
+    "question": "______ is a basic element repeated to create a pattern.",
     'answers': [
-      {'text': 'Facebook', 'score': -2},
-      {'text': 'Adobe', 'score': -2},
-      {'text': 'Google', 'score': 10},
-      {'text': 'Microsoft', 'score': -2},
+      {'text': 'shape', 'score': 0},
+      {'text': 'form', 'score': 0},
+      {'text': 'motif', 'score': 10},
+      {'text': 'hue', 'score': 0},
     ],
-    "roadmap": ['link1', 'link2', 'link3']
   },
   {
-    "question": "graphicDesign 5",
+    "question": "_______ is a special type of formal balance in which two halves of a balanced composition/design.",
     'answers': [
-      {'text': 'Facebook', 'score': -2},
-      {'text': 'Adobe', 'score': -2},
-      {'text': 'Google', 'score': 10},
-      {'text': 'Microsoft', 'score': -2},
+      {'text': 'neutrals', 'score': 0},
+      {'text': 'Primary colors', 'score': 0},
+      {'text': 'Symmetry balance', 'score': 10},
+      {'text': 'Symbol', 'score': 0},
     ],
-    "roadmap": ['link1', 'link2', 'link3']
   },
 ];

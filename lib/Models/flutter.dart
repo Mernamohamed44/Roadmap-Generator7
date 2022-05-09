@@ -13,53 +13,48 @@ class FlutterQuestion {
 
 const List flutterQuestions = [
   {
-    "question": "flutter 1",
+    "question": " _______ in Flutter are used as an identifier for Widgets, Elements and SemanticsNodes.",
     'answers': [
-      {'text': 'Facebook', 'score': 0},
-      {'text': 'Adobe', 'score': 0},
-      {'text': 'Google', 'score': 10},
-      {'text': 'Microsoft', 'score': 0},
+      {'text': 'Buttons', 'score': 0},
+      {'text': 'Keys', 'score': 0},
+      {'text': 'Widgets', 'score': 10},
+      {'text': 'None of the above', 'score': 0},
     ],
-    "roadmap": ['link1', 'link2', 'link3']
   },
   {
-    "question": "flutter 2",
+    "question": "How many types of widgets are there in Flutter?",
     'answers': [
-      {'text': 'Facebook', 'score': 0},
-      {'text': 'Adobe', 'score': 0},
-      {'text': 'Google', 'score': 10},
-      {'text': 'Microsoft', 'score': 0},
+      {'text': '2', 'score': 0},
+      {'text': '3', 'score': 0},
+      {'text': '4', 'score': 10},
+      {'text': '5', 'score': 0},
     ],
-    "roadmap": ['link1', 'link2', 'link3']
   },
   {
-    "question": "flutter 3",
+    "question": "________ will enable you to access and manipulate the cloud database.",
     'answers': [
-      {'text': 'Facebook', 'score': 0},
-      {'text': 'Adobe', 'score': 0},
-      {'text': 'Google', 'score': 10},
-      {'text': 'Microsoft', 'score': 0},
+      {'text': 'Sqflite database', 'score': 0},
+      {'text': 'Firebase database', 'score': 0},
+      {'text': 'Both A and B', 'score': 10},
+      {'text': 'None of the above', 'score': 0},
     ],
-    "roadmap": ['link1', 'link2', 'link3']
   },
   {
-    "question": "flutter 4",
+    "question": "________ is the project’s configuration file that will use a lot during working with the Flutter project.",
     'answers': [
-      {'text': 'Facebook', 'score': -2},
-      {'text': 'Adobe', 'score': -2},
-      {'text': 'Google', 'score': 10},
-      {'text': 'Microsoft', 'score': -2},
+      {'text': 'pubspec.html', 'score': 0},
+      {'text': 'pubspec.yaml', 'score': 0},
+      {'text': 'pubspec.xyz', 'score': 10},
+      {'text': 'pubspec.xml', 'score': 0},
     ],
-    "roadmap": ['link1', 'link2', 'link3']
   },
   {
-    "question": "flutter 5",
+    "question": "Which of the following widgets use for layout?",
     'answers': [
-      {'text': 'Facebook', 'score': -2},
-      {'text': 'Adobe', 'score': -2},
-      {'text': 'Google', 'score': 10},
-      {'text': 'Microsoft', 'score': -2},
+      {'text': 'Text', 'score': 0},
+      {'text': 'Column', 'score': 0},
+      {'text': 'Expanded', 'score': 10},
+      {'text': 'Inkwell', 'score': 0},
     ],
-    "roadmap": ['link1', 'link2', 'link3']
   },
 ];
