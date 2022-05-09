@@ -256,74 +256,68 @@ const Map trackRoadmaps = {
   ],
   "Flutter Development": [
     {
-      "name": "Learning Dart PL",
-      "link":
-          "https://www.geeksforgeeks.org/dart-tutorial/"
+      "name": "Learning Dart basics",
+      "link": "https://www.geeksforgeeks.org/dart-tutorial/"
     },
     {
-      "name": "android2",
-      "link": "https://www.google.com/sheets/about/"
+      "name": "Learning Dart OOP",
+      "link":
+          "https://www.geeksforgeeks.org/dart-tutorial/#:~:text=Methods%20in%20Dart-,Object%2DOriented%20Programming,-Dart%20%E2%80%93%20Classes%20%26%20Objects"
     },
     {
-      "name": "android3",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html"
+      "name": "Flutter widgets",
+      "link": "https://www.geeksforgeeks.org/what-is-widgets-in-flutter/"
     },
     {
-      "name": "android4",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html"
+      "name": "Routes and Navigator",
+      "link": "https://www.geeksforgeeks.org/routes-and-navigator-in-flutter/"
     },
     {
-      "name": "android4",
+      "name": "Introduction to APIs",
       "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html"
+          "https://www.geeksforgeeks.org/introduction-to-apis/https://www.geeksforgeeks.org/introduction-to-apis/"
     },
     {
-      "name": "android4",
+      "name": "State management",
       "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html"
+          "https://www.geeksforgeeks.org/flutter-state-management/#:~:text=In%20a%20reactive%20framework%20like,he%20sees%20another%20UI%20screen."
     },
     {
-      "name": "android4",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html"
+      "name": "Learning Firebase",
+      "link": "https://www.geeksforgeeks.org/firebase-introduction/"
     },
   ],
   "Graphic Design": [
     {
-      "name": "android1",
+      "name": "Adobe Photoshop course",
       "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+          "https://www.youtube.com/watch?v=fEvyipju8bc&list=PLg9ps5Gu0MiBJt0okQBHazj6Zl6016BLa"
     },
     {
-      "name": "android2",
-      "link": "https://www.google.com/sheets/about/",
+      "name": "Social media design",
+      "link":
+          "https://www.youtube.com/watch?v=eVp3Izr0C28&list=PL3u1QOo0h2a7M5zpXyJmC6eNWmJ7kmfj4"
     },
     {
-      "name": "android3",
+      "name": "Adobe Illustrator course",
       "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+          "https://youtube.com/playlist?list=PLg9ps5Gu0MiC_T2Spv3tMmmQjhpCrKC7Z"
     },
     {
-      "name": "android4",
+      "name": "Rules of layout design",
       "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+          "https://www.youtube.com/watch?fbclid=IwAR15gnfh_DkvdTaDjClTfXnwGBITAW1yk45MCfpBzqy-BlKzMBQbHr4WfbE&v=EFf9jBs2yfU&feature=youtu.be"
+    },
+    {"name": "Logo design", "link": "https://youtu.be/UyoXKGQrmtY"},
+    {
+      "name": "Color Theory",
+      "link":
+          "https://www.youtube.com/watch?v=_2LLXnUdUIc&list=RDCMUCeYUHG6o0YguM-g23htdsSw&index=2"
     },
     {
-      "name": "android4",
+      "name": "Typography",
       "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
-    },
-    {
-      "name": "android4",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
-    },
-    {
-      "name": "android4",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+          "https://www.youtube.com/watch?v=sByzHoiYFX0&list=RDCMUCeYUHG6o0YguM-g23htdsSw&index=3"
     },
   ],
 };

@@ -83,7 +83,7 @@ class _RadioButtonState extends State<RadioButton> {
             onChanged: (SingingCharacter? value) {
               setState(() {
                 _character = value;
-                Quiz.index = 4;
+                Quiz.index = 3;
               });
             },
           ),
@@ -97,7 +97,7 @@ class _RadioButtonState extends State<RadioButton> {
             onChanged: (SingingCharacter? value) {
               setState(() {
                 _character = value;
-                Quiz.index = 5;
+                Quiz.index = 4;
               });
             },
           ),
@@ -112,7 +112,7 @@ class _RadioButtonState extends State<RadioButton> {
             onChanged: (SingingCharacter? value) {
               setState(() {
                 _character = value;
-                Quiz.index = 6;
+                Quiz.index = 5;
               });
             },
           ),
@@ -126,7 +126,7 @@ class _RadioButtonState extends State<RadioButton> {
             onChanged: (SingingCharacter? value) {
               setState(() {
                 _character = value;
-                Quiz.index = 7;
+                Quiz.index = 6;
               });
             },
           ),
@@ -140,7 +140,7 @@ class _RadioButtonState extends State<RadioButton> {
             onChanged: (SingingCharacter? value) {
               setState(() {
                 _character = value;
-                Quiz.index = 8;
+                Quiz.index = 7;
               });
             },
           ),
@@ -155,7 +155,7 @@ class _RadioButtonState extends State<RadioButton> {
             onChanged: (SingingCharacter? value) {
               setState(() {
                 _character = value;
-                Quiz.index = 9;
+                Quiz.index = 8;
               });
             },
           ),
@@ -169,7 +169,7 @@ class _RadioButtonState extends State<RadioButton> {
             onChanged: (SingingCharacter? value) {
               setState(() {
                 _character = value;
-                Quiz.index = 10;
+                Quiz.index = 9;
               });
             },
           ),
