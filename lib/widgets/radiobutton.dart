@@ -19,7 +19,6 @@ enum SingingCharacter {
   datascience,
   ui,
   cloud,
-  cyber,
   graphic
 }
 
@@ -70,20 +69,6 @@ class _RadioButtonState extends State<RadioButton> {
               setState(() {
                 _character = value;
                 Quiz.index = 2;
-              });
-            },
-          ),
-        ),
-        ListTile(
-          title: const Text('Cyber Security', style: TextStyle(fontSize: 20)),
-          leading: Radio<SingingCharacter>(
-            fillColor: MaterialStateProperty.all(mint),
-            value: SingingCharacter.cyber,
-            groupValue: _character,
-            onChanged: (SingingCharacter? value) {
-              setState(() {
-                _character = value;
-                Quiz.index = 3;
               });
             },
           ),

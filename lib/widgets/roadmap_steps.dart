@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:roadmap_generator/widgets/checkbox.dart';
-
 import '../screens/quiz_1.dart';
 import '../track_roadmaps.dart';
+import 'checkbox.dart';
 
 class RoadmapSteps extends StatefulWidget {
   const RoadmapSteps(this.step, {Key? key}) : super(key: key);
@@ -24,6 +23,7 @@ class _RoadmapStepsState extends State<RoadmapSteps> {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        const SizedBox(height: 20),
         LinkedLabelCheckbox(
           label: trackRoadmaps[Quiz.track]![step - 1]["name"],
           padding: const EdgeInsets.symmetric(horizontal: 20.0),
@@ -36,7 +36,8 @@ class _RoadmapStepsState extends State<RoadmapSteps> {
           courseLink: trackRoadmaps[Quiz.track]![step - 1]["link"],
           step: step.toString(),
         ),
-        const SizedBox(height: 40),
+        const SizedBox(height: 20),
+        const Divider(thickness: 2),
       ],
     );
   }

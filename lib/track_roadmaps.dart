@@ -98,42 +98,6 @@ const Map trackRoadmaps = {
           "https://www.geeksforgeeks.org/what-is-data-visualization-and-why-is-it-important/"
     },
   ],
-  "Cyber Security": [
-    {
-      "name": "android1",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
-    },
-    {
-      "name": "android2",
-      "link": "https://www.google.com/sheets/about/",
-    },
-    {
-      "name": "android3",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
-    },
-    {
-      "name": "android4",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
-    },
-    {
-      "name": "android4",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
-    },
-    {
-      "name": "android4",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
-    },
-    {
-      "name": "android4",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
-    },
-  ],
   "Android Development": [
     {"name": "Learning Java", "link": "https://www.geeksforgeeks.org/java/"},
     {
@@ -166,153 +130,135 @@ const Map trackRoadmaps = {
   ],
   "UI/UX Design": [
     {
-      "name": "android1",
+      "name": "User interface principles",
       "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+          "https://www.geeksforgeeks.org/software-engineering-user-interface-design/"
     },
     {
-      "name": "android2",
-      "link": "https://www.google.com/sheets/about/",
+      "name": "Introduction to Color theory",
+      "link": "https://uxcel.com/blog/beginners-guide-to-color-theory"
     },
     {
-      "name": "android3",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+      "name": "Introduction to Typography",
+      "link": "https://www.shopify.com/partners/blog/typography"
     },
     {
-      "name": "android4",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+      "name": "User experience design",
+      "link": "https://www.geeksforgeeks.org/user-experience-or-ux-design/"
     },
     {
-      "name": "android4",
+      "name": "Creating a design system",
       "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html"
     },
+    {"name": "Laws of UX", "link": "https://lawsofux.com/"},
     {
-      "name": "android4",
+      "name": "Professional UI/UX course",
       "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
-    },
-    {
-      "name": "android4",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+          "https://www.coursera.org/professional-certificates/google-ux-design?utm_source=gg&utm_medium=sem&utm_campaign=15-GoogleUXDesign-ROW&utm_content=15-GoogleUXDesign-ROW&campaignid=12566638067&adgroupid=119528847077&device=c&keyword=ux%20design%20google%20certificate&matchtype=p&network=g&devicemodel=&adpostion=&creativeid=507197228289&hide_mobile_promo&gclid=CjwKCAiAvriMBhAuEiwA8Cs5lTRCjuQvh68Hh6ksx5OAb3q3eNkZBpEz4xrPiO7_N0pWhc4uy36PCRoCMXoQAvD_BwE"
     },
   ],
   "Full Stack Development": [
     {
-      "name": "android1",
+      "name": "HTML & CSS",
       "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+          "https://www.geeksforgeeks.org/how-to-become-a-full-stack-web-developer-in-2021/#:~:text=Start%20With%20HTML%20and%20CSS"
     },
     {
-      "name": "android2",
-      "link": "https://www.google.com/sheets/about/",
+      "name": "CSS framework",
+      "link": "https://www.geeksforgeeks.org/bootstrap/"
     },
     {
-      "name": "android3",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+      "name": "Learning Javascript",
+      "link": "https://www.geeksforgeeks.org/javascript/"
     },
     {
-      "name": "android4",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+      "name": "Front-end framework (ReactJS)",
+      "link": "https://www.geeksforgeeks.org/reactjs-tutorials/"
     },
     {
-      "name": "android4",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+      "name": "Server-side language",
+      "link": "https://www.geeksforgeeks.org/php-tutorials/"
     },
     {
-      "name": "android4",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+      "name": "Server-side framework",
+      "link": "https://www.geeksforgeeks.org/laravel/"
     },
     {
-      "name": "android4",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+      "name": "Learning about databases",
+      "link": "https://www.geeksforgeeks.org/sql-tutorial/"
     },
   ],
   "Cloud Computing": [
     {
-      "name": "android1",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+      "name": "Introduction",
+      "link": "https://www.geeksforgeeks.org/cloud-computing/"
     },
     {
-      "name": "android2",
-      "link": "https://www.google.com/sheets/about/",
+      "name": "Introduction to operating systems",
+      "link":
+          "https://www.udacity.com/course/introduction-to-operating-systems--ud923"
     },
     {
-      "name": "android3",
+      "name": "Introduction to Virtualization",
       "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+          "https://cloudacademy.com/course/introduction-to-virtualization-technologies/introduction-11/"
     },
     {
-      "name": "android4",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+      "name": "Introduction to Networks",
+      "link": "https://www.youtube.com/watch?v=qiQR5rTSshw"
     },
     {
-      "name": "android4",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+      "name": "Learning about Fibre channels",
+      "link": "https://fibrechannel.org/learn-to-succeed-with-fibre-channel/"
     },
     {
-      "name": "android4",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+      "name": "Get started with AWS",
+      "link": "https://aws.amazon.com/training/digital/?cta=tctopbanner"
     },
     {
-      "name": "android4",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+      "name": "Introduction to DevOps",
+      "link": "https://www.udacity.com/course/intro-to-devops--ud611"
     },
   ],
   "IOS Development": [
     {
-      "name": "android1",
+      "name": "Introduction to Objective-C PL",
       "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+          "https://www.geeksforgeeks.org/difference-between-c-and-objective-c/"
     },
     {
-      "name": "android2",
-      "link": "https://www.google.com/sheets/about/",
+      "name": "Basics of Swift PL",
+      "link": "https://www.geeksforgeeks.org/swift-basic-syntax/"
     },
     {
-      "name": "android3",
+      "name": "Object-Oriented Programming",
       "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+          "https://www.geeksforgeeks.org/introduction-of-object-oriented-programming/"
     },
     {
-      "name": "android4",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+      "name": "Starting with SwiftUI",
+      "link": "https://www.hackingwithswift.com/quick-start/swiftui"
     },
     {
-      "name": "android4",
+      "name": "Introduction to APIs",
       "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+          "https://www.geeksforgeeks.org/introduction-to-apis/https://www.geeksforgeeks.org/introduction-to-apis/"
     },
     {
-      "name": "android4",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+      "name": "Networking with Swift",
+      "link": "https://www.udacity.com/course/ios-networking-with-swift--ud421"
     },
     {
-      "name": "android4",
-      "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+      "name": "Version Control",
+      "link": "https://www.w3schools.com/git/default.asp"
     },
   ],
   "Flutter Development": [
     {
-      "name": "android1",
+      "name": "Learning Dart PL",
       "link":
-          "https://api.flutter.dev/flutter/material/CheckboxListTile-class.html",
+          "https://www.geeksforgeeks.org/dart-tutorial/",
     },
     {
       "name": "android2",

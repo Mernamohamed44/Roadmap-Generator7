@@ -26,27 +26,40 @@ class LinkedLabelCheckbox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: <Widget>[
         Expanded(
-          child: RichText(
-            text: TextSpan(children: [
-              TextSpan(
-                text: 'Step (' + step.toString() + '): \t\t\n',
-                style: TextStyle(fontSize: 22, color: grey),
-              ),
-              TextSpan(
-                text: label,
-                style: TextStyle(
-                  color: mint,
-                  decoration: TextDecoration.underline,
-                  fontSize: 18,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Container(
+                height: 90,
+                width: 90,
+                decoration: BoxDecoration(color: mint, shape: BoxShape.circle),
+                alignment: Alignment.center,
+                child: Text(
+                  'Step (' + step.toString() + '):',
+                  style: TextStyle(fontSize: 20, color: white),
                 ),
-                recognizer: TapGestureRecognizer()
-                  ..onTap = () {
-                    launch(courseLink);
-                  },
-              )
-            ]),
+              ),
+              const SizedBox(width: 12),
+              Flexible(
+                child: RichText(
+                  text: TextSpan(
+                    text: label,
+                    style: TextStyle(
+                      color: mint,
+                      decoration: TextDecoration.underline,
+                      fontSize: 18,
+                    ),
+                    recognizer: TapGestureRecognizer()
+                      ..onTap = () {
+                        launch(courseLink);
+                      },
+                  ),
+                ),
+              ),
+            ],
           ),
         ),
         Checkbox(

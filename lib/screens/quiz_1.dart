@@ -5,7 +5,6 @@ import 'package:roadmap_generator/screens/quiz_2.dart';
 import 'package:roadmap_generator/widgets/mint_button.dart';
 import 'package:roadmap_generator/Models/back_end.dart';
 import 'package:roadmap_generator/Models/cloud_computing.dart';
-import 'package:roadmap_generator/Models/cyber_security.dart';
 import 'package:roadmap_generator/Models/data_science.dart';
 import 'package:roadmap_generator/Models/flutter.dart';
 import 'package:roadmap_generator/Models/front_end.dart';
@@ -30,20 +29,18 @@ class Quiz extends StatelessWidget {
       case 2:
         return "Data Science";
       case 3:
-        return "Cyber Security";
-      case 4:
         return "Android Development";
-      case 5:
+      case 4:
         return "UI/UX Design";
-      case 6:
+      case 5:
         return "Full Stack Development";
-      case 7:
+      case 6:
         return "Cloud Computing";
-      case 8:
+      case 7:
         return "IOS Development";
-      case 9:
+      case 8:
         return "Flutter Development";
-      case 10:
+      case 9:
         return "Graphic Design";
       default:
         return "Flutter Development";
@@ -59,20 +56,18 @@ class Quiz extends StatelessWidget {
       case 2:
         return dataScienceQuestions;
       case 3:
-        return cyberSecurityQuestions;
-      case 4:
         return androidQuestions;
-      case 5:
+      case 4:
         return uIXQuestions;
-      case 6:
+      case 5:
         return fullStackQuestions;
-      case 7:
+      case 6:
         return cloudComputingQuestions;
-      case 8:
+      case 7:
         return iOSQuestions;
-      case 9:
+      case 8:
         return flutterQuestions;
-      case 10:
+      case 9:
         return graphicDesignQuestions;
       default:
         return flutterQuestions;
