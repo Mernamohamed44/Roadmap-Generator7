@@ -15,38 +15,38 @@ const List uIXQuestions = [
   {
     "question": "UIX 1",
     'answers': [
-      {'text': 'Facebook', 'score': -2},
-      {'text': 'Adobe', 'score': -2},
+      {'text': 'Facebook', 'score': 0},
+      {'text': 'Adobe', 'score': 0},
       {'text': 'Google', 'score': 10},
-      {'text': 'Microsoft', 'score': -2},
+      {'text': 'Microsoft', 'score': 0},
     ],
     "roadmap": ['link1', 'link2', 'link3']
   },
   {
     "question": "UIX 2",
     'answers': [
-      {'text': 'Facebook', 'score': -2},
-      {'text': 'Adobe', 'score': -2},
+      {'text': 'Facebook', 'score': 0},
+      {'text': 'Adobe', 'score': 0},
       {'text': 'Google', 'score': 10},
-      {'text': 'Microsoft', 'score': -2},
+      {'text': 'Microsoft', 'score': 0},
     ],
     "roadmap": ['link1', 'link2', 'link3']
   },
   {
     "question": "UIX 3",
     'answers': [
-      {'text': 'Facebook', 'score': -2},
-      {'text': 'Adobe', 'score': -2},
+      {'text': 'Facebook', 'score': 0},
+      {'text': 'Adobe', 'score': 0},
       {'text': 'Google', 'score': 10},
-      {'text': 'Microsoft', 'score': -2},
+      {'text': 'Microsoft', 'score': 0},
     ],
     "roadmap": ['link1', 'link2', 'link3']
   },
   {
     "question": "UIX 4",
     'answers': [
-      {'text': 'Facebook', 'score': -2},
-      {'text': 'Adobe', 'score': -2},
+      {'text': 'Facebook', 'score': 0},
+      {'text': 'Adobe', 'score': 0},
       {'text': 'Google', 'score': 10},
       {'text': 'Microsoft', 'score': -2},
     ],

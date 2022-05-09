@@ -38,7 +38,7 @@ class LinkedLabelCheckbox extends StatelessWidget {
                 decoration: BoxDecoration(color: mint, shape: BoxShape.circle),
                 alignment: Alignment.center,
                 child: Text(
-                  'Step ' + step.toString() + ':',
+                  'Step ' + step.toString(),
                   style: TextStyle(fontSize: 18, color: white),
                 ),
               ),
